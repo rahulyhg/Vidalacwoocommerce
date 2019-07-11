@@ -1,0 +1,34 @@
+.amely-social {
+
+	&.shape-circle .social-links li i {
+		border-radius: 100%;
+		border: 1px solid #cccccc;
+	}
+
+	&.shape-square .social-links li i,
+	&.shape-circle .social-links li i {
+		height: 2.5em;
+		width: 2.5em;
+		line-height: 2.5;
+	}
+}
+
+.amely-social .social-links li {
+	display: inline-block;
+	margin: 0 5px;
+
+	@include media-breakpoint-up(md) {
+		display: inline-block;
+	}
+}
+
+.amely-social .social-links li:last-child {
+	margin-right: 0;
+}
+
+.amely-social .social-links li i {
+	position: relative;
+	z-index: 2;
+
+	@extend %transit;
+}

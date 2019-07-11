@@ -1,0 +1,48 @@
+/**
+ * Breadcrumbs
+ */
+.site-breadcrumbs {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	.page-title & {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-transform: lowercase;
+
+		li {
+			display: inline-block;
+			font-size: 13px;
+
+			&:after {
+				content: '/';
+				margin: 0 5px 0 10px;
+			}
+
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+
+		> .container.full-width {
+			max-width: 95%;
+		}
+	}
+
+	.shop-display & {
+		margin: 0;
+	}
+
+	+ .container.container {
+		padding-top: 0;
+	}
+}

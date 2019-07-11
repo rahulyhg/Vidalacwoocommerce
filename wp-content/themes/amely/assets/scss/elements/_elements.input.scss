@@ -1,0 +1,28 @@
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+input[type='tel'],
+textarea {
+	font-size: 14px;
+	display: block;
+	padding: 9px 25px;
+	color: #222;
+	width: 100%;
+	background: #f7f7f7;
+	border: 1px solid transparent;
+	transition: all .3s ease-in-out;
+
+	&:focus {
+		outline: none;
+		border-color: #c7c7c7;
+		box-shadow: none;
+	}
+
+	@include media-breakpoint-down(lg) {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+	}
+}

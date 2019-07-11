@@ -1,0 +1,33 @@
+/*
+* =====================
+* Only works in Firefox
+* =====================
+*/
+@include media-breakpoint-up(md) {
+
+}
+
+/*
+* =====================
+* Only works in Safari
+* =====================
+*/
+
+/*
+* Safari 7.1+
+*/
+_::-webkit-full-page-media, _:future, :root #woo-quick-view .summary table.product-share td {
+	padding-bottom: 40px;
+}
+
+/*
+* Safari 9+
+*/
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+}
+
+/*
+* Safari 9+ (iOS Only)
+*/
+@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true)) {
+}

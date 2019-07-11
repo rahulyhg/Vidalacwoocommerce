@@ -1,0 +1,15 @@
+.contact-form {
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		margin-bottom: 30px;
+	}
+}
+
+.contact-form--light {
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		background: #fff;
+	}
+}

@@ -1,0 +1,44 @@
+.redux-main > .dashicons {
+	vertical-align: -5px;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+.redux_field_search {
+	width: 320px;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+}
+.redux-container.redux-search .redux-section-field,
+.redux-container.redux-search .redux-info-field,
+.redux-container.redux-search .redux-notice-field,
+.redux-container.redux-search .redux-container-group,
+.redux-container.redux-search .redux-container-raw,
+.redux-container.redux-search .redux-section-desc,
+.redux-container.redux-search .redux-group-tab h3,
+.redux-container.redux-search .hr,
+.redux-container.redux-search .redux-field-info,
+.redux-container.redux-search tr {
+  display: none;
+}
+.redux-container.redux-search #import_export_default_section_group,
+.redux-container.redux-search #dev_mode_default_section_group {
+  display: none !important;
+}
+.redux-container.redux-search .redux-group-tab {
+  margin-bottom: 0;
+}
+.redux-container.redux-search .redux-group-tab .form-table-section-indented {
+  margin-left: 0 !important;
+  width: 100%;
+}
+.redux-container.redux-search .redux-group-tab .form-table-section-indented .redux-group-tab .form-table-section tr:first-of-type th:first-of-type {
+  padding: inherit !important;
+}
+.redux-container.redux-search .redux-group-tab .form-table-section-indented .redux-group-tab h3 {
+  margin-top: inherit !important;
+}
+.redux-search .redux-accordian-wrap{
+	border:none !important;
+	padding:0px !important;
+}

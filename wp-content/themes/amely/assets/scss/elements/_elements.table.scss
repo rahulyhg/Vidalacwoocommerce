@@ -1,0 +1,23 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 14px;
+	line-height: 2;
+	border-bottom: 1px solid #ededed;
+}
+table th {
+	font-weight: bold;
+}
+table thead th {
+	text-transform: uppercase;
+}
+table tr > th {
+	padding-right: 20px;
+}
+table td {
+	padding: 6px 10px 6px 0;
+	border-top: 1px solid #ededed;
+}
+table tr td:first-of-type {
+	padding-left: 10px;
+}

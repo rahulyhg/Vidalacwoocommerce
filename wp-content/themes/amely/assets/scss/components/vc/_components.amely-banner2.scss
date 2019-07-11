@@ -1,0 +1,102 @@
+.amely-banner2 {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+
+	&.hover-zoom-in:hover img {
+		transform: scale(1.1);
+	}
+
+	&.hover-blur:hover img {
+		@include filter(blur(2px));
+	}
+
+	&.hover-grayscale:hover img {
+		@include filter(grayscale(100%));
+	}
+
+	&.hover-white-overlay:before,
+	&.hover-black-overlay:before {
+		content: '';
+		opacity: 0;
+		z-index: 0;
+
+		@extend %transit;
+		@extend %absolute-center;
+	}
+
+	&.hover-white-overlay {
+
+		&:before {
+			background-color: #ffffff;
+		}
+
+		&:hover:before {
+			opacity: .3;
+		}
+	}
+
+	&.hover-black-overlay {
+
+		&:before {
+			background-color: #000000;
+		}
+
+		&:hover:before {
+			opacity: .3;
+		}
+	}
+
+	img {
+		width: 100%;
+		backface-visibility: hidden;
+		transition: all .8s ease;
+		margin: 0 auto;
+	}
+
+	.banner-buttons {
+		text-align: center;
+		position: absolute;
+		left: 0;
+		bottom: 50px;
+		width: 100%;
+	}
+
+	.banner-button {
+		font-size: 14px;
+		letter-spacing: .1em;
+		min-width: 220px;
+		padding: 15px 40px;
+		margin: 0 15px;
+
+		@include media-breakpoint-up(xl) {
+			padding: 18px 60px;
+		}
+
+		@include media-breakpoint-down(lg){
+			min-width: 0;
+		}
+	}
+
+	.banner-button.link {
+		position: relative;
+		text-transform: none;
+		background-color: transparent;
+		border: none;
+		min-width: 0;
+		min-height: 0;
+		padding: 0;
+		margin-top: 10px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+
+			@extend %transit;
+		}
+	}
+}

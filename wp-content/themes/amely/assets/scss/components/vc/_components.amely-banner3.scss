@@ -1,0 +1,193 @@
+.amely-banner3 {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+
+	&.hover-zoom-in:hover img {
+		transform: scale(1.1);
+	}
+
+	&.hover-blur:hover img {
+		@include filter(blur(2px));
+	}
+
+	&.hover-grayscale:hover img {
+		@include filter(grayscale(100%));
+	}
+
+	&.hover-white-overlay:before,
+	&.hover-black-overlay:before {
+		content: '';
+		opacity: 0;
+		z-index: 1;
+
+		@extend %transit;
+		@extend %absolute-center;
+	}
+
+	&.hover-white-overlay {
+
+		&:before {
+			background-color: #ffffff;
+		}
+
+		&:hover:before {
+			opacity: .3;
+		}
+	}
+
+	&.hover-black-overlay {
+
+		&:before {
+			background-color: #000000;
+		}
+
+		&:hover:before {
+			opacity: .3;
+		}
+	}
+
+	&.text-align-left {
+
+		.banner-content {
+			left: 0;
+		}
+	}
+
+	&.text-align-center {
+
+		.banner-content {
+			text-align: center;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	&.text-align-right {
+
+		.banner-content {
+			text-align: right;
+			right: 0;
+		}
+	}
+
+	&.vertical-align-top {
+
+		.banner-content {
+			top: 0;
+		}
+	}
+
+	&.vertical-align-middle {
+
+		.banner-content {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&.vertical-align-bottom {
+
+		.banner-content {
+			bottom: 0;
+		}
+	}
+
+	&.button-visible-hover {
+
+		.banner-content {
+			margin-top: 20px;
+		}
+
+		.banner-button {
+			opacity: 0;
+			transition-delay: .1s;
+		}
+
+		&:hover .banner-button {
+			opacity: 1;
+		}
+
+		&:hover .banner-content {
+			margin-top: 0;
+		}
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		backface-visibility: hidden;
+		transition: all .8s ease;
+		margin: 0 auto;
+	}
+
+	.banner-content {
+		position: absolute;
+		z-index: 2;
+		padding: 30px;
+
+		@extend %transit;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			line-height: 1.2;
+			margin-top: 0;
+			margin-bottom: 15px;
+
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@media (max-width: 424px) {
+			padding: 15px;
+		}
+	}
+
+	.banner-text {
+		display: block;
+	}
+
+	.banner-link {
+		font-size: 0;
+		z-index: 2;
+		@include absolute-center();
+	}
+
+	.banner-button {
+		padding: 10px 30px;
+	}
+
+	.banner-button.link {
+		position: relative;
+		text-transform: none;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		margin-top: 10px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+
+			@extend %transit;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+
+		.banner-button {
+			padding: 0;
+			border: none;
+			border-bottom: 2px solid;
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.amely-button {
+	-webkit-appearance: initial;
+	font-size: 14px;
+
+	@extend button;
+
+	&.alt {
+		@extend button.alt-button;
+	}
+
+	&.small {
+		font-size: 12px;
+		padding: 8px 15px;
+	}
+
+	&.large {
+		font-size: 16px;
+		padding: 12px 35px;
+	}
+
+	&.xlarge {
+		font-size: 19px;
+		padding: 20px 45px;
+	}
+
+	i {
+		&.icon-right {
+			margin-left: 5px;
+		}
+
+		&.icon-left {
+			margin-right: 5px;
+		}
+	}
+
+}

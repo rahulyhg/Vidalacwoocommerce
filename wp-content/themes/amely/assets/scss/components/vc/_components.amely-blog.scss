@@ -1,0 +1,161 @@
+.amely-blog {
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+
+	&.loaded {
+		opacity: 1;
+	}
+
+	.js-post-carousel {
+		opacity: 0;
+		visibility: hidden;
+
+		.slick-slide a {
+			margin: 0;
+		}
+
+		.slick-slide .entry-meta a {
+			display: inline-block;
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+	}
+
+	.single-image.slick-slide {
+		opacity: 1;
+	}
+
+	.post-item {
+
+		@extend %transit;
+
+		&.adding-item {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	.post-grid-layout .post-item > article {
+		margin-bottom: 30px;
+
+		.entry-body {
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	@include media-breakpoint-only(md) {
+
+		.slick-arrow.post-carousel-arrow {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.slick-arrow.post-carousel-arrow.slick-next {
+			right: -30px;
+		}
+
+		.slick-arrow.post-carousel-arrow.slick-prev {
+			left: -30px;
+		}
+
+		&:hover {
+
+			.slick-arrow.post-carousel-arrow {
+				opacity: .6;
+				visibility: visible;
+			}
+
+			.slick-arrow.post-carousel-arrow.slick-next {
+				right: -20px;
+			}
+			.slick-arrow.post-carousel-arrow.slick-prev {
+				left: -20px;
+			}
+		}
+
+	}
+
+	@include media-breakpoint-only(sm) {
+
+		.slick-arrow.post-carousel-arrow {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.slick-arrow.post-carousel-arrow.slick-next {
+			right: -30px;
+		}
+
+		.slick-arrow.post-carousel-arrow.slick-prev {
+			left: -30px;
+		}
+
+		&:hover {
+
+			.slick-arrow.post-carousel-arrow {
+				opacity: .6;
+				visibility: visible;
+			}
+
+			.slick-arrow.post-carousel-arrow.slick-next {
+				right: 10px;
+			}
+			.slick-arrow.post-carousel-arrow.slick-prev {
+				left: 10px;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+
+		.slick-arrow.post-carousel-arrow.slick-next {
+			right: 10px;
+		}
+
+		.slick-arrow.post-carousel-arrow.slick-prev {
+			left: 10px;
+		}
+
+		.slick-slide {
+			opacity: .5;
+		}
+
+		.slick-active,
+		.slick-current {
+			opacity: 1;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+
+		.slick-arrow.post-carousel-arrow {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.slick-arrow.post-carousel-arrow.slick-next {
+			right: -50px;
+		}
+
+		.slick-arrow.post-carousel-arrow.slick-prev {
+			left: -50px;
+		}
+
+		&:hover {
+
+			.slick-arrow.post-carousel-arrow {
+				opacity: .6;
+				visibility: visible;
+			}
+
+			.slick-arrow.post-carousel-arrow.slick-next {
+				right: -30px;
+			}
+
+			.slick-arrow.post-carousel-arrow.slick-prev {
+				left: -30px;
+			}
+		}
+	}
+}

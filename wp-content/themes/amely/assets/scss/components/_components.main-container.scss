@@ -1,0 +1,14 @@
+.main-container > .container,
+.main-container > .site-content {
+	padding-top: 30px;
+
+	@include media-breakpoint-up(lg) {
+		padding-top: 60px;
+	}
+}
+
+.error404 .main-container .site-content,
+.main-container.no-whitespace > .container,
+.main-container.no-whitespace > .site-content {
+	padding-top: 0;
+}

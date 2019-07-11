@@ -1,0 +1,15 @@
+@include media-breakpoint-up(lg) {
+
+	.container.wide {
+		max-width: 95%;
+	}
+
+	.container.full {
+		max-width: 100%;
+	}
+
+	.container.full-no-paddings {
+		max-width: 100%;
+		padding: 0;
+	}
+}

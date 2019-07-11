@@ -1,0 +1,12 @@
+a {
+	@extend %transit;
+}
+
+.link-secret {
+	color: currentColor;
+}
+
+.link-underline a, a.link-underline {
+	display: inline-block;
+	border-bottom: 1px solid currentColor;
+}

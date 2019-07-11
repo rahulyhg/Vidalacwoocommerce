@@ -1,0 +1,136 @@
+.mabel-siwc-img-wrapper {
+	width: auto;
+
+	.mb-siwc-tag {
+		font-size: 15px;
+		font-weight: 700;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+
+		@extend %transit;
+
+		&:hover,
+		&.active {
+			color: #ffffff;
+		}
+	}
+}
+
+.mb-siwc-popup.mb-siwc-popup {
+	opacity: 1;
+	z-index: 11;
+	border-radius: 0;
+	transition: opacity .5s ease;
+
+	&.mabel-invisible {
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+.mb-siwc-popup.mb-siwc-popup .mb-siwc-popup-inner {
+	text-align: left;
+
+	h1, h2, a {
+		text-align: left;
+	}
+
+	h1 {
+		font-size: 15px;
+		line-height: 1.4;
+		font-weight: 400;
+	}
+
+	h2 {
+		font-size: 14px;
+		font-weight: 700;
+		color: #333333;
+	}
+}
+
+/* Customized by ThemeMove */
+.mabel-siwc-img-wrapper.product-popup .mb-siwc-popup .mb-siwc-popup-inner {
+	padding: 20px 20px 0;
+
+	.siwc-thumb-wrapper {
+		position: relative;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
+		width: auto;
+
+		a {
+			border: none;
+			background-color: transparent;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.product-title, .product-price, .shop-button {
+		margin-left: 0;
+	}
+
+	.product-title {
+		margin-top: 20px;
+
+		a {
+			text-align: left;
+			color: #696969;
+			border: none;
+			background-color: transparent;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.product-price {
+		padding-bottom: 0;
+	}
+
+	.wrap-price {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 15px;
+	}
+}
+
+.mb-siwc-popup.mb-siwc-popup .shop-button {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+/***************** Insight Attribute Swatches ****************/
+.mb-siwc-popup.mb-siwc-popup .product-swatches {
+
+	.isw-swatch:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.isw-swatch--isw_color .isw-term {
+		vertical-align: middle;
+		height: 14px;
+		width: 14px;
+		border-radius: 100%;
+		line-height: 14px;
+
+		&[data-term="white"] {
+			border: 1px solid #dddddd;
+		}
+	}
+
+	.isw-swatch--isw_image .isw-term {
+		height: 14px;
+		width: 14px;
+
+		img {
+			vertical-align: middle !important;
+			border-radius: 100%;
+		}
+	}
+}

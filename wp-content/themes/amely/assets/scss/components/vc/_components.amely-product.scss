@@ -1,0 +1,164 @@
+.amely-product {
+	position: relative;
+	text-align: center;
+
+	&:hover {
+
+		.background-overlay {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.button {
+			opacity: 1;
+			visibility: visible;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.product-top-text {
+		position: absolute;
+		top: 60px;
+		left: 50%;
+		font-size: 34px;
+		letter-spacing: 0.1em;
+		color: #333333;
+		font-weight: 700;
+
+		transform: translateX(-50%);
+	}
+
+	.background-overlay {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		opacity: 0;
+		visibility: hidden;
+		z-index: 1;
+
+		@extend %transit;
+	}
+
+	.product-image {
+		background: no-repeat center center;
+		background-size: 100%;
+
+		img {
+			opacity: 0;
+		}
+	}
+
+	.product-title,
+	.product-price {
+		font-size: 24px;
+	}
+
+	.product-title {
+		margin-bottom: 20px;
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.product-price {
+		font-weight: 700;
+		color: #333333;
+	}
+
+	.product-info {
+		position: absolute;
+		bottom: 60px;
+		left: 50%;
+		width: 100%;
+		transform: translateX(-50%);
+
+		@include media-breakpoint-down(sm) {
+			bottom: 30px;
+		}
+	}
+
+	.button {
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		left: 50%;
+		max-width: 220px;
+		width: 100%;
+		z-index: 2;
+		background-color: transparent;
+		border: 1px solid #ffffff;
+		opacity: 0;
+		visibility: hidden;
+		padding: 20px 0;
+		transform: translate(-50%, -30%);
+
+		@extend %transit;
+
+		&:hover {
+			background-color: #ffffff;
+			color: #333333;
+			border-color: #ffffff;
+		}
+	}
+
+	&.display_info {
+		.product-info {
+			top: 50%;
+			z-index:2;
+		}
+
+		.button {
+			display: none;
+		}
+
+		.product-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 100;
+		}
+
+		.product-title,
+		.product-price {
+			font-size: 15px;
+			line-height: 28px;
+			color: #fff;
+			font-weight: 400;
+			opacity: 0;
+			visibility: hidden;
+
+			@extend %transit;
+
+		}
+
+		.product-title {
+			margin-bottom: 10px;
+			transform: translateY(-10px);
+		}
+
+		.product-price {
+			transform: translateY(10px);
+		}
+
+		&:hover {
+			.background-overlay {
+				opacity: 0.9;
+			}
+
+			.product-title,
+			.product-price {
+				opacity: 1;
+				visibility: visible;
+				transform: none;
+			}
+		}
+	}
+}

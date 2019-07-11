@@ -1,0 +1,120 @@
+.amely-pagination {
+	margin-bottom: 100px;
+
+	&.woocommerce-pagination {
+		margin-bottom: 30px;
+	}
+}
+
+.amely-pagination ul.page-numbers {
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.amely-pagination ul.page-numbers {
+	a {
+		color: #696969;
+		font-weight: 600;
+	}
+}
+
+.amely-pagination ul li {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 100%;
+	margin-right: 5px;
+}
+
+.amely-pagination ul li span {
+	display: block;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 100%;
+}
+
+.amely-pagination .current {
+	color: #ffffff;
+	background-color: #333333;
+	font-weight: 600;
+}
+
+.amely-pagination ul li a {
+	display: block;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 100%;
+
+	&:hover {
+		color: #ffffff;
+		background-color: #444444;
+
+		@include transit;
+	}
+}
+
+.amely-pagination .prev,
+.amely-pagination .next {
+	position: relative;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		opacity: 1;
+		visibility: hidden;
+		font-size: 18px;
+		color: #ffffff;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover {
+		font-size: 0;
+
+		&:before {
+			opacity: 1;
+			visibility: visible;
+
+			@include transit;
+		}
+	}
+}
+
+.amely-pagination .prev:before {
+	@include fa-icon('\f104');
+}
+
+.amely-pagination .next:before {
+	@include fa-icon('\f105');
+}
+
+.woocommerce-pagination {
+	margin-top: 30px;
+
+	@extend .amely-pagination;
+
+	.next,
+	.prev {
+		&:before {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 16px;
+
+			@extend %fa-icon;
+		}
+	}
+
+	.next:before {
+		content: '\f105';
+	}
+
+	.prev:before {
+		content: '\f104';
+	}
+}

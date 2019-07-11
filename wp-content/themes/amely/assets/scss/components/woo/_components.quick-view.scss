@@ -1,0 +1,260 @@
+/**
+Quick view
+ */
+#woo-quick-view {
+
+	// quick view non available on small devices
+	display: none;
+	position: fixed;
+	max-width: 960px;
+	visibility: hidden;
+
+	/* Force Hardware Acceleration in WebKit */
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	will-change: left, top, width;
+	z-index: 1000;
+
+	@include transform(translateZ(0));
+
+	&.is-visible {
+		visibility: visible;
+	}
+
+	&.animate-width {
+		background-color: #ffffff;
+		box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+		transition: box-shadow .3s;
+	}
+
+	.container {
+		max-width: none;
+	}
+
+	.quick-view-close {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		z-index: 99;
+
+		&:after {
+			font-size: 50px;
+			color: #333333;
+
+			@include pe-icon('\e680');
+		}
+	}
+
+	.product-badges span {
+		left: 0;
+	}
+
+	/* Loading class when adding product to cart */
+	.quickview-loading {
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, .9);
+		z-index: 4;
+
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 80%;
+			text-align: center;
+			font-size: 28px;
+			color: #333333;
+
+			@include transform(translate(-50%, -50%));
+
+			&:before {
+				display: block;
+				text-align: center;
+				content: url(assets/images/loading.svg);
+				z-index: 3;
+				margin-bottom: 40px;
+
+				@include transform(scale(2.5));
+			}
+		}
+
+		&.added span:before {
+			font-size: 30px;
+
+			@include pe-icon('\e66c');
+		}
+
+		&.error span:before {
+			font-size: 30px;
+
+			@include pe-icon('\e681');
+		}
+	}
+
+	.post-password-form {
+
+		p {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	.images {
+		position: relative;
+		float: left;
+		width: 432px;
+		margin-bottom: 0;
+		z-index: 2;
+	}
+
+	.quick-view-carousel {
+		overflow: hidden;
+		margin-bottom: 0;
+
+		@extend %transit;
+
+		img.slick-slide {
+			width: 432px;
+		}
+
+		img:not(.slick-slide):not(:first-of-type) {
+			display: none;
+		}
+	}
+
+	.summary {
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		float: left;
+		z-index: 1;
+		width: calc(100% - 432px);
+		max-height: 544px;
+		padding: 40px 50px 30px;
+
+		@include transition(opacity .3s, visibility 0s);
+
+		table.product_meta,
+		table.product-share {
+			width: 100%;
+		}
+
+		&.ps-container {
+
+			> .ps-scrollbar-y-rail > .ps-scrollbar-y,
+			> .ps-scrollbar-x-rail > .ps-scrollbar-x {
+				width: 6px;
+			}
+		}
+
+		@include media-breakpoint-only(lg) {
+			max-height: 530px;
+		}
+	}
+
+	.slick-dots {
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		margin-top: 0 !important;
+	}
+}
+
+#woo-quick-view.add-content {
+
+	.quick-view-close {
+		opacity: .4;
+		visibility: visible;
+
+		@include animation(quickview-slide-in .5s);
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.post-password-form {
+
+		p {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.summary {
+		opacity: 1;
+		visibility: visible;
+		position: relative;
+
+		.product_title {
+			line-height: 1.2;
+
+			a {
+				color: #696969;
+			}
+		}
+
+		.product_title,
+		.woocommerce-product-rating,
+		.price,
+		.woocommerce-product-details__short-description,
+		.cart,
+		.stock,
+		.product-meta-buttons,
+		.product_meta,
+		.product-share {
+			@include animation(quickview-slide-in .5s);
+		}
+	}
+}
+
+// Quick view in magnific popup
+.mfp-content #woo-quick-view {
+	display: block;
+	position: relative;
+	visibility: visible;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+
+	.summary {
+		position: relative;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.mfp-close {
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		background-color: transparent;
+		opacity: .4;
+
+		&:before {
+			font-size: 50px;
+
+			@include pe-icon('\e680');
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+
+	#woo-quick-view {
+		display: block;
+	}
+}

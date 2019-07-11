@@ -1,0 +1,14 @@
+.insight-popup .insight-popup-never-show {
+	margin-left: 15px;
+	margin-bottom: 5px;
+}
+
+.insight-popup button.mfp-close {
+	background-color: #ffffff;
+}
+
+.insight-popup button.mfp-close:before {
+	font-size: 40px;
+
+	@include pe-icon('\e680');
+}

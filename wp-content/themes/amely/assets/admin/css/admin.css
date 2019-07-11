@@ -1,0 +1,315 @@
+/*
+Redux
+================================================
+*/
+.redux-container-image_select .redux-image-select .redux-image-select {
+	margin-bottom: 10px !important;
+}
+
+.redux-container-button_set .ui-button-text {
+	padding: 0;
+}
+
+#amely_options-archive_sidebar_config .redux-image-select,
+#amely_options-page_sidebar_config .redux-image-select,
+#amely_options-post_sidebar_config .redux-image-select,
+#amely_options-search_sidebar_config .redux-image-select,
+#amely_options-shop_sidebar_config .redux-image-select,
+#amely_options-product_sidebar_config .redux-image-select {
+	margin-right: 20px !important;
+}
+
+#amely_options-search_style .redux-image-select {
+	margin-right: 20px !important;
+}
+
+/* Metabox in product page */
+.cmb2-metabox .ui-tabs-vertical {
+	border: 0;
+	font-size: inherit;
+	font-family: inherit;
+	background: #f7f7f7 none;
+	padding: 0;
+}
+
+.cmb2-metabox .ui-tabs-vertical .ui-tabs-nav {
+	background: none;
+	border: none;
+	margin-top: 10px;
+	padding: 0;
+}
+
+.cmb2-metabox .ui-tabs-vertical .ui-tabs-nav li {
+	background: none;
+	border: none;
+	border-radius: 0;
+	padding-bottom: 0;
+	padding-right: .1em;
+	margin-right: 0;
+	margin-top: 0;
+}
+
+.cmb2-metabox .ui-tabs.ui-tabs-vertical .ui-tabs-nav a.ui-tabs-anchor {
+	color: #0073aa;
+}
+
+.cmb2-metabox .ui-tabs.ui-tabs-vertical .ui-tabs-nav a.ui-tabs-anchor:hover {
+	color: #00a0d3;
+}
+
+.cmb2-metabox .ui-tabs-vertical .ui-tabs-panel {
+	border-width: 1px;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.cmb-type-slider .cmb2-slider-value-display {
+	float: none;
+}
+
+/* VC shortcode icons */
+.vc_element-icon[class*=amely-icon-] {
+	background: url(../images/vc-icon.png) no-repeat center center !important;
+	background-size: 100%;
+}
+
+/**
+VC Param CSS.
+*/
+.tm_number {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.tm_number span {
+	line-height: 40px;
+	margin-left: 10px;
+}
+
+.tm_number input[type='number'] {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	-moz-appearance: textfield;
+	height: 40px;
+	width: 70px;
+	margin: 0;
+}
+
+.tm_number input[type=number]::-webkit-inner-spin-button, .tm_number input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.tm_number .minus, .tm_number .plus {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	width: 30px;
+	height: 40px;
+	border: 1px solid #dddddd;
+	background-color: #eeeeee;
+	color: #888888;
+	margin: 0;
+	padding: 0;
+}
+
+.tm_number .minus {
+	border-right-width: 0;
+}
+
+.tm_number .plus {
+	border-left-width: 0;
+}
+
+.tm_number .minus:focus, .tm_number .plus:focus {
+	outline: none;
+	border-color: #5b9dd9;
+	border-width: 1px !important;
+	-webkit-box-shadow: 0 0 2px rgba(30, 140, 190, .8);
+	box-shadow: 0 0 2px rgba(30, 140, 190, .8);
+}
+
+/* VC Shortcode icons */
+.vc_element-icon[class*=amely-element-icon-] {
+	background: url(../images/vc-icon.png) no-repeat;
+}
+
+.vc_element-icon.amely-element-icon-blog {
+	background-position: 0 0;
+}
+
+.vc_element-icon.amely-element-icon-button {
+	background-position: -252px 0;
+}
+
+.vc_element-icon.amely-element-icon-countdown {
+	background-position: -210px 0;
+}
+
+.vc_element-icon.amely-element-icon-gmaps {
+	background-position: -42px 0;
+}
+
+.vc_element-icon.amely-element-icon-icon-box {
+	background-position: -168px 0;
+}
+
+.vc_element-icon.amely-element-icon-image-carousel {
+	background-position: -126px 0;
+}
+
+.vc_element-icon.amely-element-icon-mailchimp {
+	background-position: -84px 0;
+}
+
+.vc_element-icon.amely-element-icon-products-categories,
+.vc_element-icon.amely-element-icon-brand-image-grid {
+	background-position: -334px 0;
+}
+
+.vc_element-icon.amely-element-icon-product-grid,
+.vc_element-icon.amely-element-icon-product-tabs {
+	background-position: -375px 0;
+}
+
+.vc_element-icon.amely-element-icon-product-carousel,
+.vc_element-icon.amely-element-icon-brand-image-carousel {
+	background-position: -293px 0;
+}
+
+.vc_element-icon.amely-element-icon-product-widget {
+	background-position: -416px 0;
+}
+
+.vc_element-icon.amely-element-icon-team-member {
+	background-position: -458px 0;
+}
+
+.vc_element-icon.amely-element-icon-testimonials {
+	background-position: -500px 0;
+}
+
+.vc_element-icon.amely-element-icon-social-links {
+	background-position: -542px 0;
+}
+
+.vc_element-icon.amely-element-icon-banner,
+.vc_element-icon.amely-element-icon-banner2,
+.vc_element-icon.amely-element-icon-banner3,
+.vc_element-icon.amely-element-icon-banner4,
+.vc_element-icon.amely-element-icon-product-category-banner {
+	background-position: -126px 0;
+}
+
+.vc_element-icon.amely-element-icon-banner.attachment-thumbnail {
+	background: none;
+}
+
+.vc_element-icon.amely-element-icon-instagram {
+	background-position: -662px 0;
+}
+
+.vc_element-icon.amely-element-icon-space {
+	background-position: -621px 0;
+}
+
+.vc_element-icon.amely-element-icon-product,
+.vc_element-icon.amely-element-icon-feature-product {
+	background-position: -702px 0;
+}
+
+.vc_element-icon.amely-element-icon-banner-grid-5 {
+	background-position: -743px 0;
+}
+
+.vc_element-icon.amely-element-icon-banner-grid-6 {
+	background-position: -783px 0;
+}
+
+.vc_element-icon.amely-element-icon-banner-grid-6v2 {
+	background-position: -823px 0;
+}
+
+.vc_element-icon.amely-element-icon-showcase {
+	background-position: -702px 0;
+}
+
+/* Widget CSS */
+.tm-table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.tm-table.widefat {
+}
+
+.tm-table tr {
+	text-align: center;
+}
+
+.tm-table > tbody > tr > th {
+	border-top-color: transparent !important;
+}
+
+.tm-table > tbody > tr > td {
+	text-align: left;
+	vertical-align: middle !important;
+	border: 1px solid #dddddd;
+}
+
+.tm-table > tbody > tr > td.tm_screen-size {
+	background-color: #f8f8f8;
+}
+
+.tm-table > tbody > tr > td.tm_item-width {
+	padding: 5px;
+}
+
+.tm-table i {
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.tm-social-links-inner {
+	height: 300px;
+	overflow: auto;
+	margin-bottom: 15px;
+}
+
+.tm_social-links-table > tbody > tr > th:first-child {
+	text-align: left;
+}
+
+.tm_social-links-table > tbody > tr > td:first-child {
+	text-align: left;
+}
+
+.tm_social-links-table i {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+/* Coming Soon admin menu item */
+#wp-admin-bar-amely-coming-soon a:before {
+	content: '\f135';
+	font-family: FontAwesome !important;
+	color: #20b862 !important;
+}
+
+#wp-admin-bar-amely-coming-soon.coming-soon-success a {
+	color: #20b862 !important;
+}
+
+#wp-admin-bar-amely-coming-soon.coming-soon-warning a {
+	color: #f0ad4e !important;
+}
+
+#wp-admin-bar-amely-coming-soon.coming-soon-warning a:before {
+	color: #f0ad4e !important;
+}
+
+/* Fix color picker on WP 4.9.x*/
+.button.wp-color-result {
+	position: relative;
+}

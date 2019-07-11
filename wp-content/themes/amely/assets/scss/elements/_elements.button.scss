@@ -1,0 +1,50 @@
+button,
+input[type="submit"],
+input[type="button"],
+a.button {
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: .1em;
+	color: #ffffff;
+	border-radius: 0;
+	border: 1px solid $color__secondary;
+	background-color: $color__secondary;
+	padding: 10px 20px;
+
+	@extend %transit;
+
+	&:hover,
+	&:focus {
+		color: #ffffff;
+		border-color: $color__primary;
+		background-color: $color__primary;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+button.alt,
+button.alt-button,
+input[type="submit"].alt,
+input[type="submit"].alt-button,
+input[type="button"].alt,
+input[type="button"].alt-button,
+a.button.alt,
+a.button.alt-button {
+	color: #ffffff;
+	border-color: $color__primary;
+	background-color: $color__primary;
+
+	&:hover,
+	&:focus {
+		color: #ffffff;
+		border-color: $color__secondary;
+		background-color: $color__secondary;
+	}
+}
+
+
+

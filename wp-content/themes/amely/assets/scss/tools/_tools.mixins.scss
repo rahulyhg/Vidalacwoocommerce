@@ -1,0 +1,292 @@
+// Hidden
+@mixin hidden($lower, $upper) {
+	@include media-breakpoint-between($lower, $upper) {
+		display: none;
+	}
+}
+
+// Padding
+@mixin padding-top($breakpoint, $number) {
+	@include media-breakpoint-up($breakpoint) {
+		padding-top: #{$number}px;
+	}
+}
+
+@mixin padding-bottom($breakpoint, $number) {
+	@include media-breakpoint-up($breakpoint) {
+		padding-bottom: #{$number}px;
+	}
+}
+
+// Boxed
+@mixin boxed {
+	@include make-container();
+	@include make-container-max-widths();
+}
+
+// Column
+@mixin col($breakpoint, $column) {
+	@extend %grid-column;
+	@include media-breakpoint-up($breakpoint) {
+		@include make-col($column);
+	}
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Center
+@mixin is-translated($width: 100%) {
+	width: $width;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+// Absolute center
+@mixin absolute-center() {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/////////////////////////////////////////////////
+// Responsive font size
+/////////////////////////////////////////////////
+
+// These values are the minimum and maximum viewport sizes to apply the font scaling
+$min_width: 554;
+$max_width: 1200;
+
+@mixin res-font-size($fontsizemin,$fontsizemax) {
+	font-size: #{$fontsizemin}px;
+	@include media-breakpoint-between(sm, lg) {
+		font-size: calc(#{$fontsizemin}px + (#{$fontsizemax} - #{$fontsizemin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		font-size: #{$fontsizemax}px;
+	}
+}
+
+/////////////////////////////////////////////////
+// Responsive margin and padding
+/////////////////////////////////////////////////
+
+@mixin res-padding-top($paddingmin,$paddingmax) {
+	padding-top: #{$paddingmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		padding-top: calc(#{$paddingmin}px + (#{$paddingmax} - #{$paddingmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		padding-top: #{$paddingmax}px;
+	}
+}
+
+@mixin res-padding-right($paddingmin,$paddingmax) {
+	padding-right: #{$paddingmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		padding-right: calc(#{$paddingmin}px + (#{$paddingmax} - #{$paddingmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		padding-right: #{$paddingmax}px;
+	}
+}
+
+@mixin res-padding-bottom($paddingmin,$paddingmax) {
+	padding-bottom: #{$paddingmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		padding-bottom: calc(#{$paddingmin}px + (#{$paddingmax} - #{$paddingmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		padding-bottom: #{$paddingmax}px;
+	}
+}
+
+@mixin res-padding-left($paddingmin,$paddingmax) {
+	padding-left: #{$paddingmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		padding-left: calc(#{$paddingmin}px + (#{$paddingmax} - #{$paddingmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		padding-left: #{$paddingmax}px;
+	}
+}
+
+@mixin res-margin-top($marginmin,$marginmax) {
+	margin-top: #{$marginmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		margin-top: calc(#{$marginmin}px + (#{$marginmax} - #{$marginmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		margin-top: #{$marginmax}px;
+	}
+}
+
+@mixin res-margin-right($marginmin,$marginmax) {
+	margin-right: #{$marginmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		margin-right: calc(#{$marginmin}px + (#{$marginmax} - #{$marginmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		margin-right: #{$marginmax}px;
+	}
+}
+
+@mixin res-margin-bottom($marginmin,$marginmax) {
+	margin-bottom: #{$marginmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		margin-bottom: calc(#{$marginmin}px + (#{$marginmax} - #{$marginmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		margin-bottom: #{$marginmax}px;
+	}
+}
+
+@mixin res-margin-left($marginmin,$marginmax) {
+	margin-left: #{$marginmin}px;
+	@include media-breakpoint-between(sm, lg) {
+		margin-left: calc(#{$marginmin}px + (#{$marginmax} - #{$marginmin}) * ((100vw - #{$min_width}px) / (#{$max_width} - #{$min_width})));
+	}
+	@include media-breakpoint-up(xl) {
+		margin-left: #{$marginmax}px;
+	}
+}
+
+@mixin transit() {
+	@include transition(all 0.5s ease);
+}
+
+@mixin fa-icon($icon) {
+	@extend %fa-icon;
+	content: $icon;
+}
+
+@mixin fa-icon-before($icon, $margin: 0) {
+	&:before {
+		@include fa-icon($icon);
+		margin-right: #{$margin}px;
+	}
+}
+
+@mixin fa-icon-after($icon, $margin: 0) {
+	&:after {
+		@include fa-icon($icon);
+		margin-left: #{$margin}px;
+	}
+}
+
+@mixin pe-icon($icon) {
+	@extend %pe-icon;
+	content: $icon;
+}
+
+@mixin pe-icon-before($icon, $margin: 0) {
+	&:before {
+		@include pe-icon($icon);
+		margin-right: #{$margin}px;
+	}
+}
+
+@mixin pe-icon-after($icon, $margin: 0) {
+	&:after {
+		@include pe-icon($icon);
+		margin-left: #{$margin}px;
+	}
+}
+
+@mixin ion-icons($icon) {
+	@extend %ion-icons;
+	content: $icon;
+}
+
+@mixin ion-icons-before($icon, $margin: 0) {
+	&:before {
+		@include ion-icons($icon);
+		margin-right: #{$margin}px;
+	}
+}
+
+@mixin ion-icons-after($icon, $margin: 0) {
+	&:after {
+		@include ion-icons($icon);
+		margin-left: #{$margin}px;
+	}
+}
+
+@mixin themify-icons($icon) {
+	@extend %themify-icons;
+	content: $icon;
+}
+
+@mixin themify-icons-before($icon, $margin: 0) {
+	&:before {
+		@include themify-icons($icon);
+		margin-right: #{$margin}px;
+	}
+}
+
+@mixin themify-icons-after($icon, $margin: 0) {
+	&:after {
+		@include themify-icons($icon);
+		margin-left: #{$margin}px;
+	}
+}
+
+@mixin small-add-to-cart-btn() {
+
+	.product-buttons .add-to-cart-btn {
+		font-size: 0;
+
+		a:not(.loading) {
+
+			&:before {
+				content: '\e60d';
+				line-height: 48px;
+				@extend %themify-icons;
+			}
+
+			&.add_to_cart_button:before {
+				content: '\e60d';
+			}
+
+			&.product_type_variable {
+
+				&:before {
+					content: '\e64d';
+				}
+
+				&.isw-ready:not(.loading):not(.added) {
+					&:before {
+						content: '\e60d';
+					}
+				}
+
+				&.isw-readmore:not(.loading):not(.added) {
+					&:before {
+						content: '\e60d';
+					}
+				}
+			}
+
+			&.product_type_external:before {
+				content: '\e62d';
+			}
+		}
+
+		a.added:before {
+			content: '\f375';
+		}
+	}
+}
+
+
+

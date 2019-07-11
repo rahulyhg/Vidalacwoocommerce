@@ -1,0 +1,87 @@
+// My account link on the header
+.header-login {
+	position: relative;
+	font-size: 0;
+
+	i {
+		font-size: 18px;
+	}
+
+	.header-tools.layout-base & {
+		padding-left: 0;
+		padding-right: 20px;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			height: 16px;
+			width: 1px;
+			margin-left: 25px;
+			background-color: #e0e0e0;
+		}
+	}
+
+	.header-tools.layout-big & {
+		padding-right: 20px;
+
+		i {
+			font-size: 30px;
+		}
+
+		@include media-breakpoint-up(lg) {
+
+			> a.toggle .wishlist-count {
+				height: 22px;
+				line-height: 22px;
+				right: -16px;
+				padding: 0 6px;
+			}
+		}
+	}
+
+	.header-tools.layout-no-line & {
+		padding-right: 25px;
+	}
+
+	@include media-breakpoint-down(xs) {
+		.header-tools & {
+			display: none !important;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-right: 25px;
+
+		i {
+			font-size: 18px !important;
+		}
+
+		&:after {
+			display: none !important;
+		}
+	}
+}
+
+// on mobile menu
+.site-mobile-menu .header-login {
+	display: none;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: rgba(239, 239, 239, 0.8);
+	padding: 0 20px;
+	margin-top: 40px;
+
+	a {
+		line-height: 40px;
+	}
+
+	i {
+		margin-right: 10px;
+	}
+
+	@include media-breakpoint-down(xs) {
+		display: block;
+		font-size: 15px;
+	}
+}

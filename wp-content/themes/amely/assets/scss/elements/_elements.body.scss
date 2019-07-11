@@ -1,0 +1,266 @@
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&.compare-opened,
+	&.search-opened {
+		overflow: hidden !important;
+	}
+
+	&.ajax-loading {
+
+		.main-container {
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: #ffffff;
+				opacity: .8;
+				z-index: 100;
+			}
+
+			&:after {
+				content: url(assets/images/loading.svg);
+				position: absolute;
+				top: 50px;
+				left: 50%;
+				z-index: 101;
+				-webkit-transform: scale(2) translateX(-50%);
+				-moz-transform: scale(2) translateX(-50%);
+				transform: scale(2) translateX(-50%);
+			}
+
+			* {
+				-webkit-animation: fadeOut .5s forwards;
+				-moz-animation: fadeOut .5s forwards;
+				animation: fadeOut .5s forwards;
+				-webkit-animation-delay: 1s;
+				-webkit-animation-delay: 1s;
+				animation-delay: 1s;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+
+		&.mobile-menu-opened,
+		&.mobile-wishlist-opened,
+		&.mobile-minicart-opened,
+		&.mobile-search-opened {
+			overflow: hidden !important;
+		}
+	}
+}
+
+body.no-redux {
+	font-family: Source Sans Pro;
+	font-size: 14px;
+
+	.text-hightlight,
+	.select2-container--default .select2-results__option--highlighted[aria-selected],
+	#woo-quick-view .quickview-loading span:before,
+	.isw-swatches .isw-swatch--isw_text .isw-term:not(.isw-disabled):hover,
+	.product-style-hover--info .add-to-cart-btn,
+	.isw-swatches .isw-swatch--isw_text .isw-term.isw-selected {
+		color: $color__primary;
+	}
+
+	.scroll-to-top,
+	.widget-title:after,
+	.post-tags .tagcloud a:hover,
+	.widget_tag_cloud .tagcloud a:hover,
+	.widget_product_tag_cloud .tagcloud a:hover,
+	.widget_shopping_cart .button:hover, .widget_shopping_cart .button:focus,
+	button.alt, input[type="submit"].alt, input[type="button"].alt, a.button.alt, .tm-button.button.alt,
+	button.alt-button, input[type="submit"].alt-button, input[type="button"].alt-button, a.button.alt-button, .tm-button.button.alt,
+	button:hover, input[type="submit"]:hover, input[type="button"]:hover, a.button:hover, .tm-button.button:hover,
+	button:focus, input[type="submit"]:focus, input[type="button"]:focus, a.button:focus, .tm-button.button:focus,
+	.woocommerce-checkout form.checkout_coupon .button,
+	#customer_login .woocommerce-Button[name="register"],
+	form.track_order p.form-row:last-of-type .button,
+	.woocommerce .order-again .button
+	.tm-products-filter ul li > a:after,
+	.page-header__prev-item:hover > a, .page-header__next-item:hover > a,
+	.product-categories-menu .cat-item a:after,
+	form.track_order p.form-row:last-of-type .button:hover,
+	.woocommerce .order-again .button:hover,
+	form.track_order p.form-row:last-of-type .button,
+	.woocommerce-checkout form.checkout_coupon .button,
+	#customer_login .woocommerce-Button[name="register"],
+	.woocommerce.single-product .product .product-tabs-wrapper .wc-tabs li:after,
+	.woocommerce .order-again .button,
+	.ui-slider .ui-slider-handle, .ui-slider .ui-slider-range,
+	.amely-mailchimp .title:after,
+	.amely-products-widget .product-buttons > div a:hover,
+	.amely-products-grid-hot.enable-carousel .slick-arrow:hover:before,
+	.categories-icon-list > [class*=' col-']:hover,
+	.tm-products-filter ul li > a:after,
+	.wb-allview-formcnt .wb-allview-lettercnt .wb-wb-allview-letters:hover,
+	.wb-allview-formcnt .wb-allview-lettercnt .wb-wb-allview-letters:focus,
+	.wb-bx-controls.wb-bx-has-controls-direction .wb-bx-prev:hover,
+	.wb-bx-controls.wb-bx-has-controls-direction .wb-bx-next:hover,
+	.wpb-js-composer .vc_tta-tabs.vc_tta-style-amely.vc_tta-style-amely .vc_tta-tab > a:after,
+	.wpb-js-composer .vc_tta-tabs.vc_tta-style-amely.vc_tta-style-amely .vc_tta-panel .vc_tta-panel-title > a:after,
+	.amely-simple-banner .third-line:after,
+	.wb-bx-wrapper.wb-carousel-amely .wb-bx-pager.wb-bx-default-pager .wb-bx-pager-item a:hover,
+	.wb-bx-wrapper.wb-carousel-amely .wb-bx-pager.wb-bx-default-pager .wb-bx-pager-item a.active {
+		background-color: $color__primary;
+	}
+
+	button.alt, input[type="submit"].alt, input[type="button"].alt, a.button.alt, .tm-button.button.alt,
+	button.alt-button, input[type="submit"].alt-button, input[type="button"].alt-button, a.button.alt-button, .tm-button.button.alt,
+	button:hover, input[type="submit"]:hover, input[type="button"]:hover, a.button:hover, .tm-button.button:hover,
+	button:focus, input[type="submit"]:focus, input[type="button"]:focus, a.button:focus, .tm-button.button:focus,
+	.post-tags .tagcloud a:hover,
+	.widget_tag_cloud .tagcloud a:hover,
+	.widget_product_tag_cloud .tagcloud a:hover,
+	.page-header__prev-item:hover > a, .page-header__next-item:hover > a,
+	.widget_shopping_cart .button:hover, .widget_shopping_cart .button:focus,
+	form.track_order p.form-row:last-of-type .button:hover,
+	.woocommerce .order-again .button:hover,
+	a.show-categories-menu,
+	.wb-allview-formcnt .wb-allview-lettercnt .wb-wb-allview-letters:hover,
+	.wb-allview-formcnt .wb-allview-lettercnt .wb-wb-allview-letters:focus,
+	.tm-products-widget .slick-arrow.small:focus,
+	.amely-products-widget .slick-arrow.small:focus {
+		border-color: $color__primary;
+	}
+
+	.ajax-results-wrapper .suggestion-sku,
+	.ajax-results-wrapper .suggestion-price {
+		color: $color__secondary;
+	}
+
+	.widget_shopping_cart .button.checkout:hover,
+	.slick-arrow:hover, .slick-arrow:focus,
+	.slick-dots li.slick-active button,
+	.slick-dots button:hover,
+	.widget_shopping_cart .button.checkout:focus,
+	button.alt:hover, input[type="submit"].alt:hover, input[type="button"].alt:hover, a.button.alt:hover, .tm-button.button.alt:hover,
+	button.alt:focus, input[type="submit"].alt:focus, input[type="button"].alt:focus, a.button.alt:focus, .tm-button.button.alt:focus,
+	button.alt-button:hover, input[type="submit"].alt-button:hover, input[type="button"].alt-button:hover, a.button.alt-button:hover,
+	button.alt-button:focus, input[type="submit"].alt-button:focus, input[type="button"].alt-button:focus, a.button.alt-button:focus,
+	button, input[type="submit"], input[type="button"], a.button, .tm-button.button,
+	.wb-bx-wrapper.wb-carousel-amely .wb-bx-pager.wb-bx-default-pager .wb-bx-pager-item a {
+		background-color: $color__secondary;
+	}
+
+	.widget_shopping_cart .button.checkout:hover,
+	.widget_shopping_cart .button.checkout:focus,
+	button.alt:hover, input[type="submit"].alt:hover, input[type="button"].alt:hover, a.button.alt:hover, .tm-button.button.alt:hover,
+	button.alt:focus, input[type="submit"].alt:focus, input[type="button"].alt:focus, a.button.alt:focus, .tm-button.button.alt:focus,
+	button.alt-button:hover, input[type="submit"].alt-button:hover, input[type="button"].alt-button:hover, a.button.alt-button:hover,
+	button.alt-button:focus, input[type="submit"].alt-button:focus, input[type="button"].alt-button:focus, a.button.alt-button:focus,
+	button, input[type="submit"], input[type="button"], a.button, .tm-button.button {
+		border-color: $color__secondary;
+	}
+
+	.secondary-font, .tm-icon-box.secondary-font .title, .tm-icon-box.secondary-font a {
+		font-family: Playfair Display;
+	}
+
+	.tertiary-font, .tm-icon-box.tertiary-font .title, .tm-icon-box.tertiary-font a {
+		font-family: Yellowtail;
+	}
+
+	h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+	.woocommerce.single-product .product #review_form_wrapper #reply-title {
+		font-family: Source Sans Pro;
+	}
+
+	a, .cookie-buttons a.cookie-btn,
+	.header-wishlist .add-to-cart-btn .button {
+		color: $color__secondary;
+	}
+
+	a:hover, a:focus,
+	.site-mobile-menu .menu-show-all > a,
+	.topbar .switcher .nice-select:hover .current,
+	.topbar .switcher .nice-select:hover:after,
+	.topbar .switcher .nice-select .option:hover,
+	.cookie-wrapper a,
+	.entry-meta .meta-author a,
+	.shop-loop-head .switcher.active,
+	.shop-loop-head .switcher:hover,
+	.product-loop .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a,
+	.product-loop .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a,
+	.woocommerce.single-product .product .summary .product-meta-buttons > div a:hover,
+	.woocommerce.single-product .product .summary table.product_meta td.value a:hover,
+	.woocommerce.single-product .product .summary table.product-share td.value a:hover,
+	.wc-tabs li.active > a,
+	.category-grid-item:hover .product-category-content .category-link a,
+	.category-grid-item:hover .product-category-content .category-link:after {
+		color: $color__primary;
+	}
+
+	.cookie-buttons a:hover,
+	.header-phone:hover {
+		background: $color__primary;
+	}
+
+	.widget_calendar tbody td a:hover,
+	.header-phone {
+		border-color: $color__primary;
+	}
+
+	.topbar, .topbar a {
+		color: #666666;
+	}
+
+	.topbar {
+		border-color: #eeeeee;
+	}
+
+	.page-title h1,
+	.page-title a,
+	.page-title .site-breadcrumbs,
+	.page-title .site-breadcrumbs ul li:after,
+	.page-title .site-breadcrumbs .insight_core_breadcrumb a,
+	.page-title .site-breadcrumbs .insight_core_breadcrumb a:hover {
+		color: #111111;
+	}
+
+	.page-title .page-subtitle {
+		color: #111111;
+	}
+
+	.page-title {
+		background-color: #f5f5f5;
+	}
+
+	.page-title:before {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	.site-breadcrumbs,
+	.site-breadcrumbs ul li:after,
+	.site-breadcrumbs .insight_core_breadcrumb a {
+		color: #444;
+	}
+
+	.site-breadcrumbs .insight_core_breadcrumb a:hover {
+		color: $color__primary;
+	}
+
+	.site-menu .menu > ul > li > a, .site-menu .menu > li > a {
+		color: $color__secondary;
+	}
+
+	.site-header {
+		background-color: #ffffff;
+	}
+
+	.header-search > a.toggle {
+		color: $color__secondary;
+	}
+
+	button, .amely-button, input[type="submit"], input[type="button"], a.button {
+		color: #FFFFFF;
+	}
+}

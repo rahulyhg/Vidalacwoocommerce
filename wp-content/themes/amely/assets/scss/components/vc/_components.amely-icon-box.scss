@@ -1,0 +1,173 @@
+.amely-icon-box {
+	height: 100%;
+
+	@include media-breakpoint-down(sm) {
+		border: none !important;
+	}
+
+	&.center {
+		@extend .text-xs-center;
+	}
+
+	&.left,
+	&.right {
+		.title {
+			margin-bottom: 4px;
+			margin-top: 0;
+		}
+
+		.tm-icon-box__icon,
+		.tm-icon-box__content {
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		&.middle {
+
+			.tm-icon-box__icon,
+			.tm-icon-box__content {
+				vertical-align: middle;
+			}
+		}
+
+		&.bottom {
+
+			.tm-icon-box__icon,
+			.tm-icon-box__content {
+				vertical-align: bottom;
+			}
+		}
+	}
+
+	&.left {
+
+		.tm-icon-box__icon {
+			padding-right: 20px;
+
+			span {
+				padding-right: 10px;
+			}
+		}
+	}
+
+	&.right {
+
+		.tm-icon-box__icon {
+			padding-left: 20px;
+
+			span {
+				padding-left: 10px;
+			}
+		}
+
+		.tm-icon-box__content {
+			text-align: right;
+		}
+	}
+
+	&.center {
+		display: block;
+
+		.tm-icon-box__icon {
+			margin-bottom: 20px;
+		}
+	}
+
+	&.only-icon {
+		display: inline-block;
+
+		.tm-icon-box__icon {
+			padding: 0;
+
+			span {
+				padding: 0;
+			}
+		}
+	}
+
+	.tm-icon-box__content {
+
+		.title {
+			font-weight: 500;
+			letter-spacing: .1em;
+			line-height: 1.5;
+
+			a {
+				display: block;
+			}
+		}
+
+		p.subtext {
+
+			a {
+				font-size: 14px;
+				font-style: italic;
+				text-decoration: underline;
+			}
+
+			&:after {
+				padding-left: 5px;
+
+				@include fa-icon('\f105');
+			}
+		}
+	}
+
+	.tm-icon-box__icon {
+
+		span {
+			line-height: 1;
+			font-weight: 300;
+		}
+
+		a {
+			display: block;
+		}
+
+		&.with-bg {
+
+			&[class*='circle'] {
+
+				i, span {
+					border-radius: 100%;
+				}
+			}
+
+			&[class*='rounded'] {
+
+				i, span {
+					border-radius: 3px;
+				}
+			}
+
+			&[class*='outline-'] {
+
+				i, span {
+					border: 2px solid;
+				}
+			}
+
+			i, span {
+				text-align: center;
+				width: 1.8em;
+				height: 1.8em;
+				line-height: 1.8em;
+			}
+
+			i[class|="pe-7s"] {
+				width: 1.5em;
+				height: 1.5em;
+				line-height: 1.5em;
+			}
+		}
+	}
+
+	.description {
+		line-height: 1.6;
+		margin-top: 15px;
+
+		em {
+			font-style: italic !important;
+		}
+	}
+}

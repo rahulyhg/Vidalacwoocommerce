@@ -1,0 +1,177 @@
+.vc_tta-panel-body {
+	box-sizing: border-box !important;
+}
+
+// Tabs
+.wpb-js-composer .vc_tta-tabs.vc_tta-style-amely.vc_tta-style-amely {
+
+	.vc_tta-panel-body {
+		border-width: 0;
+	}
+
+	.vc_tta-panel {
+		@extend %transit;
+	}
+
+	.vc_tta-tabs-list {
+		margin-bottom: 30px;
+	}
+
+	.vc_tta-tab {
+		color: #888888;
+		padding-bottom: 7px;
+	}
+
+	.vc_tta-tab > a {
+		position: relative;
+		font-size: 24px;
+		line-height: 1.5;
+		font-weight: 600;
+		border: none;
+		margin: 0 20px;
+		padding: 0 0 10px;
+
+		@extend %transit;
+	}
+
+	.vc_tta-tab > a > span {
+
+		cursor: pointer;
+	}
+
+	.vc_tta-panel .vc_tta-panel-title > a {
+		display: inline-block;
+		color: #888888;
+		border: none;
+		padding: 0;
+
+		@extend %transit;
+	}
+
+	.vc_tta-panel-title {
+		line-height: 1.5;
+		padding-bottom: 30px;
+	}
+
+	.vc_tta-panel-heading {
+		border: none;
+	}
+
+	.vc_tta-tab > a,
+	.vc_tta-panel .vc_tta-panel-title > a {
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -10px;
+			height: 2px !important;
+			width: 100% !important;
+			display: block !important;
+			border: none !important;
+			background-color: #333333 !important;
+			transition: transform .5s;
+			transform: scale3d(0, 1, 1);
+			transform-origin: 100% 50%;
+			transition-timing-function: cubic-bezier(.8, 0, .2, 1);
+
+			@extend %transit;
+		}
+	}
+
+	.vc_tta-tab > a:hover:after,
+	.vc_tta-tab.vc_active > a:after,
+	.vc_tta-panel .vc_tta-panel-title > a:hover:after,
+	.vc_tta-panel.vc_active .vc_tta-panel-title > a:after {
+		transform: scale3d(1, 1, 1);
+		transform-origin: 0% 50%;
+	}
+
+	&.vc_tta-controls-align-left .vc_tta-tab:first-child > a {
+		margin-left: 0;
+	}
+
+	&.vc_tta-controls-align-right .vc_tta-tab:last-child > a {
+		margin-right: 0;
+	}
+}
+
+// Accordion
+.wpb-js-composer .vc_tta-accordion.vc_tta-style-amely.vc_tta-style-amely {
+
+	.vc_tta-panel .vc_tta-panel-heading {
+		border-top-width: 0;
+		border-right-width: 0;
+		border-left-width: 0;
+		border-bottom: 1px solid #eeeeee;
+
+		@extend %transit;
+	}
+
+	.vc_tta-panel:first-child .vc_tta-panel-heading {
+		border-top: 1px solid #eeeeee;
+	}
+
+	.vc_tta-panel.vc_active {
+		border-bottom: 1px solid #eeeeee;
+	}
+
+	.vc_tta-panel.vc_active .vc_tta-panel-heading {
+		background-color: #eeeeee;
+	}
+
+	.vc_tta-panel-title {
+		font-size: 18px;
+		line-height: 1.5;
+		color: #333333;
+	}
+
+	.vc_tta-panel-body {
+		border: none !important;
+		padding: 30px 0 !important;
+	}
+
+}
+
+// Toggle
+.wpb-js-composer .vc_toggle.vc_toggle_amely.vc_toggle_amely {
+	margin-bottom: 20px;
+
+	.vc_toggle_title {
+		@extend %transit;
+	}
+
+	.vc_toggle_title h4 {
+		font-size: 18px;
+		line-height: 1.5;
+		color: #333333;
+		display: block;
+		border-top: 1px solid #eeeeee;
+		border-bottom: 1px solid #eeeeee;
+		margin: 0;
+		padding: 14px 20px;
+	}
+
+	&.vc_toggle_active {
+
+		.vc_toggle_title {
+			background-color: #eeeeee;
+		}
+
+		.vc_toggle_content {
+			border-bottom: 1px solid #eeeeee;
+		}
+	}
+
+	+ .vc_toggle.vc_toggle_amely.vc_toggle_amely {
+		margin-top: -20px;
+
+		.vc_toggle_title h4 {
+			border-top-width: 0;
+		}
+	}
+
+	.vc_toggle_content {
+		margin: 0;
+		padding: 30px 0;
+	}
+}

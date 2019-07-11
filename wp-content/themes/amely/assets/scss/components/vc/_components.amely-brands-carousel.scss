@@ -1,0 +1,62 @@
+.amely-brands-carousel {
+	opacity: 0;
+	margin-bottom: 0;
+	@extend %transit;
+
+	&.slick-initialized {
+		opacity: 1;
+	}
+
+	.tm-carousel-item {
+		text-align: center;
+		margin: 0 30px;
+
+		&:hover img {
+			opacity: 1;
+		}
+
+		a {
+			margin: 0;
+		}
+
+		span {
+			display: block;
+			margin-top: 10px;
+		}
+	}
+
+	.tm-carousel-item img {
+		opacity: .5;
+		backface-visibility: hidden;
+
+		@extend %transit;
+	}
+
+	.slick-dots {
+		margin-top: -40px;
+		position: relative;
+	}
+
+	@include media-breakpoint-down(xs) {
+
+		.tm-carousel-item {
+			margin: 0;
+		}
+
+		.slick-arrow.slick-next {
+			right: 10px;
+		}
+
+		.slick-arrow.slick-prev {
+			left: 10px;
+		}
+
+		.slick-slide {
+			opacity: .5;
+		}
+
+		.slick-active {
+			opacity: 1;
+		}
+	}
+}

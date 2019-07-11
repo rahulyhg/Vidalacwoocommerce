@@ -1,0 +1,633 @@
+/* Style for WooCommerce Brand Pro plugin  */
+
+/* Brands thumbnail Shortcode */
+.wb-thumb-wrapper .wb-thumb-cnt {
+	padding: 0;
+}
+
+.wb-thumb-wrapper .wb-thumb-title a {
+	font-size: 16px;
+}
+
+/* A-Z Filter */
+.eb-scrollbarcnt {
+
+	.scrollbar {
+		background-color: transparent;
+		width: 6px;
+	}
+
+	.scrollbar:hover {
+
+		.track {
+			background-color: #e6e6e6;
+		}
+
+		.thumb {
+			width: 6px;
+		}
+	}
+
+	.track {
+		background-color: transparent;
+		width: 6px;
+		border-radius: 3px;
+
+		@extend %transit;
+	}
+
+	.thumb {
+		background-color: #9f9f9f;
+		width: 3px;
+		left: 0;
+
+		@extend %transit;
+	}
+
+	.thumb .end {
+		background-color: #9f9f9f;
+	}
+}
+
+.eb-scrollbarcnt .scrollbar,
+.eb-scrollbarcnt-short .scrollbar {
+	z-index: 1 !important;
+}
+
+.wb-alphabet-table .wb-other-brands {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.wb-filter-amely .wb-alphabet-table {
+	background-color: #f5f5f5;
+	padding: 15px 0;
+}
+
+.wb-filter-amely .wb-alphabet-table .wb-all-alphabet {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 60px;
+	line-height: 1.5;
+	border-right: 1px solid #eeeeee;
+}
+
+.wb-filter-amely .wb-alphabet-table .wb-alphabet-item {
+	font-size: 15px !important;
+	font-weight: 600;
+	padding: 0 10px;
+}
+
+.wb-filter-amely .wb-other-brands {
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.wb-filter-amely .eb-scrollbarcnt {
+	margin-top: 0;
+
+	.overview {
+		padding: 0;
+	}
+}
+
+.wb-brandlist-amely .wb-filter-item-cnt {
+	border-top: 1px solid #eeeeee;
+	padding: 10px 0 10px 20px;
+}
+
+.wb-brandlist-amely .wb-filter-item {
+	font-size: 16px;
+	padding-right: 5px;
+}
+
+.wb-brandlist-amely .brand-count {
+	font-size: 14px;
+}
+
+/* Brand List */
+.wb-allview.wb-allview-amely {
+
+	.wb-allview-cat-cnt {
+		margin-bottom: 70px;
+	}
+
+	.wb-allview-title {
+		font-size: 72px;
+		line-height: 1.5em;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #dddddd;
+		font-weight: 600;
+		color: $color__secondary;
+	}
+
+	.wb-allview-item-cnt img {
+		margin-bottom: 10px;
+
+		@extend %transit;
+	}
+}
+
+.wb-allview-formcnt select#pw_brand_category_filter {
+	display: none;
+}
+
+.wb-allview-formcnt .select2 {
+	width: 50% !important;
+
+	.select2-selection {
+		border: none !important;
+		background-color: #f7f7f7;
+		height: 50px;
+
+		.select2-selection__rendered {
+			position: relative;
+			line-height: 50px !important;
+
+			&:after {
+				position: absolute;
+				top: 50%;
+				right: 30px;
+				font-size: 18px;
+				transform: translateY(-50%);
+
+				@include fa-icon('\f107');
+			}
+		}
+
+		.select2-selection__arrow {
+			display: none;
+		}
+	}
+}
+
+.wb-allview-lettercnt {
+	text-align: left;
+	border: 1px solid #eeeeee;
+	margin: 50px 0;
+	padding: 35px 30px 5px;
+
+	.wb-wb-allview-letters {
+		text-align: center;
+		font-size: 36px;
+		font-weight: 600;
+		width: 60px;
+		height: 60px;
+		border: 1px solid #eeeeee;
+		padding: 10px 0;
+		margin-right: 30px;
+		margin-bottom: 30px;
+
+		&:hover,
+		&:focus {
+			color: #ffffff !important;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+
+		.wb-wb-allview-letters {
+			font-size: 30px;
+			margin-right: 15px;
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.wb-allview.wb-allview-amely .wb-allview-cat-cnt {
+	position: relative;
+}
+
+.wb-allview.wb-allview-amely .wb-allview-cat-cnt .go-to-filter {
+	position: absolute;
+	bottom: -60px;
+	right: 0;
+
+	&:after {
+		margin-left: 10px;
+
+		@include fa-icon('\f106');
+	}
+}
+
+.wb-allview-formcnt.wb-multi-filter-amely {
+	text-align: left;
+}
+
+.wb-allview-formcnt.wb-multi-filter-amely label.pw_brand_category_filter_checkbox:before {
+	display: inline-block;
+	vertical-align: -3px;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	border: 1px solid #dddddd;
+	background-image: none;
+	margin-top: 0;
+	margin-right: 5px;
+}
+
+.wb-allview-formcnt.wb-multi-filter-amely label.pw_brand_category_filter_checkbox:after {
+	position: absolute;
+	left: 17px;
+	top: 6px;
+	opacity: 0;
+
+	@include fa-icon('\f00c');
+	@extend %transit;
+}
+
+.wb-allview-formcnt.wb-multi-filter-amely label.pw_brand_category_filter_checkbox.pw-active-filter:after {
+	opacity: 1;
+}
+
+.pw_brand_loading_cnt {
+
+	.pw_brand_le_loading:before {
+		display: inline-block;
+		content: url(assets/images/loading.svg);
+		transform: scale(2);
+	}
+
+	img {
+		display: none;
+	}
+}
+
+/* Brand Carousel */
+.wb-bx-wrapper.wb-car-amely {
+	max-width: none !important;
+	text-align: center;
+	margin: 0 auto 60px;
+
+	img {
+		margin: 0 auto;
+	}
+
+	.wb-car-title {
+		font-size: 14px;
+		margin-top: 10px;
+
+		> a {
+			font-size: 16px;
+		}
+	}
+
+	.wb-car-item-cnt {
+		background: transparent;
+	}
+}
+
+.wb-bx-wrapper.wb-carousel-amely {
+
+	&:hover {
+
+		@include media-breakpoint-up(md) {
+
+			.wb-bx-prev,
+			.wb-bx-next {
+				opacity: .6;
+			}
+
+			.wb-bx-prev {
+				left: -25px;
+			}
+
+			.wb-bx-next {
+				right: -25px;
+			}
+		}
+	}
+
+	.wb-bx-controls-direction {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.wb-bx-controls-direction a {
+		text-indent: 0;
+		z-index: 99;
+	}
+
+	.wb-bx-prev,
+	.wb-bx-next {
+		position: absolute;
+		top: 50%;
+		width: 30px;
+		height: 60px;
+		font-size: 0;
+		opacity: .6;
+		z-index: 1;
+		background-color: $color__secondary;
+		background-image: none !important;
+		transform: translateY(-50%);
+
+		&:before {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			color: #ffffff;
+			font-size: 14px;
+			transform: translate(-50%, -50%);
+
+			@include fa-icon('\f053');
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+
+		@include media-breakpoint-up (md) {
+			opacity: 0;
+		}
+	}
+
+	.wb-bx-prev {
+		left: -15px;
+
+		@include media-breakpoint-up (md) {
+			left: -40px;
+		}
+	}
+
+	.wb-bx-next {
+		left: auto;
+		right: -15px;
+
+		&:before {
+			content: '\f054';
+		}
+
+		@include media-breakpoint-up (md) {
+			right: -40px;
+		}
+	}
+
+	.vc_row[data-vc-stretch-content="true"] & {
+
+		.wb-bx-prev {
+
+			@include media-breakpoint-up (md) {
+				left: -15px;
+			}
+		}
+
+		.wb-bx-next {
+
+			@include media-breakpoint-up (md) {
+				right: -15px;
+			}
+		}
+	}
+
+}
+
+.wb-bx-wrapper.wb-carousel-amely .wb-bx-pager.wb-bx-default-pager {
+	bottom: -50px;
+
+	.wb-bx-pager-item a {
+		cursor: pointer;
+		line-height: 1.5;
+		border: none;
+		height: 5px;
+		width: 20px;
+		background-color: $color__secondary;
+		border-radius: 0;
+		opacity: .6;
+		margin: 0 5px 0 0;
+
+		&:hover,
+		&.active {
+			opacity: 1;
+		}
+	}
+}
+
+/* Product Carousel by Brands */
+.wb-brandpro-car-header-amely {
+	text-align: center;
+
+	span {
+		display: block;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.6;
+		color: $color__secondary;
+		margin-bottom: 25px;
+	}
+
+	span:after {
+		content: '';
+		display: block;
+		height: 2px;
+		width: 100px;
+		background-color: #cccccc;
+		margin: 20px auto 0;
+	}
+
+	a {
+		margin-left: 5px;
+	}
+}
+
+.wb-brandpro-car-header.wb-brandpro-car-header-amely + .wb-bx-wrapper.wb-carousel-amely {
+	margin-top: 40px;
+
+	.wb-bxslider > li {
+		margin: 0 15px !important;
+	}
+
+	.wb-brandpro-car-cnt {
+		border: none;
+	}
+
+	.wb-brandpro-car-cnt .wb-brandpro-car-detail {
+		background-color: transparent;
+		padding: 0;
+	}
+
+	.wb-brandpro-car-cnt .wb-brandpro-car-title h3 {
+		font-size: 16px;
+		line-height: 1.5;
+		text-transform: none;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.wb-brandpro-car-cnt .wb-brandpro-car-price {
+		color: $color__price;
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 5px;
+
+		del {
+			font-size: 15px;
+			margin-right: 5px;
+		}
+	}
+
+	.wb-brandpro-car-cnt .wb-brandpro-car-meta span {
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+	.wb-brandpro-car-cnt .wb-brandpro-car-meta a {
+		font-size: 16px;
+	}
+}
+
+.wb-brandpro-car-header-amely + .products {
+	margin-top: 40px;
+}
+
+/* Product Grid by Brands with Filter */
+select#pw_brand_category_filter_product {
+	display: none;
+
+	+ .select2 {
+		width: 30% !important;
+		margin: 0 15px 10px;
+	}
+}
+
+.wb-brandpro-list-cnt .wb-brandpro-list-detail {
+	padding: 0;
+
+	.wb-brandpro-list-title h3 {
+		display: inline-block;
+		font-size: 16px;
+		line-height: 1.5;
+		text-transform: none;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.wb-brandpro-list-price {
+		color: $color__price;
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 5px;
+
+		del {
+			font-size: 15px;
+			margin-right: 5px;
+		}
+	}
+}
+
+.wb-brandpro-list-cnt .wb-brandpro-list-meta {
+
+	span {
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 5px;
+	}
+
+	a {
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+
+.wb-brandpro-list-cnt .tooltip-cnt {
+	top: -43px;
+	height: auto;
+	border: 1px solid #eeeeee;
+	margin-left: -15px;
+	box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, .15);
+}
+
+/* Sticky brand button */
+#pw_stick_brands {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+	width: 100px;
+	height: 50px;
+	color: $color__secondary;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+
+	.pw-title {
+		line-height: 50px;
+
+		&:before {
+			margin-right: 5px;
+			@include fa-icon('\f219');
+		}
+	}
+}
+
+.pw_stick_brands {
+	padding: 0 20px 20px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .15);
+
+	.pw-content-close {
+		margin-top: 10px;
+		margin-right: -10px;
+	}
+
+	&.pw-content-left {
+		left: 100px;
+	}
+
+	&.pw-content-right {
+		right: 100px;
+	}
+}
+
+/* Brand in single product */
+.wb-posted_in {
+	display: none;
+}
+
+.wb-single-img-cnt {
+	margin-bottom: 20px;
+
+	a {
+		margin: 0;
+	}
+
+	img {
+		height: auto !important;
+		width: auto !important;
+	}
+
+	+ .product_meta {
+		margin-top: 0 !important;
+	}
+}
+
+/* A-Z views product */
+.widget_pw_widget_a_z_views {
+
+	.wb-alphabet-table {
+		padding: 10px 0;
+		margin-bottom: 0;
+	}
+
+	.wb-alphabet-table + .eb-scrollbarcnt {
+		margin-top: 0;
+	}
+
+	.wb-alphabet-table .wb-alphabet-item {
+		font-size: 16px;
+	}
+
+	.brand-count {
+		font-size: 14px;
+	}
+
+	.wb-filter-item-cnt.brand-item-short {
+		border-bottom: 1px solid #eeeeee;
+	}
+
+	.wb-filter-item-cnt .wb-filter-item {
+		font-size: 15px;
+		padding: 14px 0;
+	}
+}

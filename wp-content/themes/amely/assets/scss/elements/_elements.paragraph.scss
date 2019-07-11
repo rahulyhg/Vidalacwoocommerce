@@ -1,0 +1,17 @@
+p {
+	font-size: $global-font-size;
+	line-height: $global-line-height;
+	margin-bottom: 24px;
+
+	.wpb_text_column & {
+		margin-bottom: 0;
+	}
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+p:empty {
+	display: none;
+}

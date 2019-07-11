@@ -1,0 +1,20 @@
+.vc_row.row:before,
+.vc_row.row:after {
+	display: none;
+}
+
+.vc_row.amely-stick-row {
+	align-items: start;
+}
+
+@include media-breakpoint-up(lg) {
+
+	.vc_row.vc_row-amely-wide {
+		opacity: 0;
+		transition: all .5s ease-in-out !important;
+
+		&.row-calculated {
+			opacity: 1;
+		}
+	}
+}

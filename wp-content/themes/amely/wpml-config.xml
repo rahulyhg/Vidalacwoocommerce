@@ -1,0 +1,10 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1">testimonials</custom-type>
+    <custom-type translate="1">ic_mega_menu</custom-type>
+    <custom-type translate="1">ic_popup</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="1">testimonials-category</taxonomy>
+  </taxonomies>
+</wpml-config>

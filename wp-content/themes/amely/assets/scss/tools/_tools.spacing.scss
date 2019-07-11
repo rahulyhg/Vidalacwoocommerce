@@ -1,0 +1,130 @@
+// Responsive spacing
+$directions: (
+	t: top,
+	r: right,
+	b: bottom,
+	l: left
+);
+
+@function get-direction($name, $directions: $directions) {
+	@return map-get($directions, $name);
+}
+
+@each $direction in map-keys($directions) {
+
+	$d: get-direction($direction);
+
+	$i: -100;
+
+	@while $i <= 100 {
+
+		.p#{$direction}-#{$i} {
+			padding-#{$d}: #{$i}px;
+		}
+
+		.p#{$direction}-#{$i}-i {
+			padding-#{$d}: #{$i}px !important;
+		}
+
+		.m#{$direction}-#{$i} {
+			margin-#{$d}: #{$i}px;
+		}
+
+		.m#{$direction}-#{$i}-i {
+			margin-#{$d}: #{$i}px !important;
+		}
+
+		@each $breakpoint in map-keys($grid-breakpoints) {
+
+			@include media-breakpoint-up($breakpoint) {
+
+				.p#{$direction}-#{$breakpoint}-#{$i} {
+					padding-#{$d}: #{$i}px;
+				}
+
+				.p#{$direction}-#{$breakpoint}-#{$i}-i {
+					padding-#{$d}: #{$i}px !important;
+				}
+
+				.m#{$direction}-#{$breakpoint}-#{$i} {
+					margin-#{$d}: #{$i}px;
+				}
+
+				.m#{$direction}-#{$breakpoint}-#{$i}-i {
+					margin-#{$d}: #{$i}px !important;
+				}
+			}
+		}
+
+		$i: $i + 5;
+	}
+}
+
+
+$j: -100;
+@while $j <= 100 {
+
+	.pa-#{$j} {
+		padding: #{$j}px;
+	}
+
+	.ma-#{$j} {
+		margin: #{$j}px;
+	}
+
+	.pv-#{$j} {
+		padding-top: #{$j}px;
+		padding-bottom: #{$j}px;
+	}
+
+	.mv-#{$j} {
+		margin-top: #{$j}px;
+		margin-bottom: #{$j}px;
+	}
+
+	.ph-#{$j} {
+		padding-left: #{$j}px;
+		padding-right: #{$j}px;
+	}
+
+	.mh-#{$j} {
+		margin-left: #{$j}px;
+		margin-right: #{$j}px;
+	}
+
+	@each $breakpoint in map-keys($grid-breakpoints) {
+
+		@include media-breakpoint-up($breakpoint) {
+
+			.pa-#{$breakpoint}-#{$j} {
+				padding: #{$j}px;
+			}
+
+			.ma-#{$breakpoint}-#{$j} {
+				margin: #{$j}px;
+			}
+
+			.pv-#{$breakpoint}-#{$j} {
+				padding-top: #{$j}px;
+				padding-bottom: #{$j}px;
+			}
+
+			.mv-#{$breakpoint}-#{$j} {
+				margin-top: #{$j}px;
+				margin-bottom: #{$j}px;
+			}
+
+			.ph-#{$breakpoint}-#{$j} {
+				padding-left: #{$j}px;
+				padding-right: #{$j}px;
+			}
+
+			.mh-#{$breakpoint}-#{$j} {
+				margin-left: #{$j}px;
+				padding-right: #{$j}px;
+			}
+		}
+	}
+
+	$j: $j + 5;
+}

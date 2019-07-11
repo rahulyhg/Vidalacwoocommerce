@@ -1,0 +1,630 @@
+/*=====================================
+Custom CSS of the theme
+ =====================================*/
+
+// Coming Soon admin menu item
+#wp-admin-bar-amely-coming-soon {
+
+	a:before {
+		content: '\f135';
+		font-family: FontAwesome !important;
+	}
+
+	&.coming-soon-success a {
+		color: #20b862 !important;
+	}
+
+	&.coming-soon-warning a {
+		color: #f0ad4e !important;
+	}
+
+	&.coming-soon-warning a:before {
+		color: #f0ad4e !important;
+	}
+}
+
+// Text widget on the left col of the header
+.hot-line {
+	width: 165px;
+
+	.hot-line-text,
+	i {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.hot-line-text {
+		text-align: right;
+		padding-right: 20px;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 1.7;
+		letter-spacing: .05em;
+		color: #ababab;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	a {
+		font-size: 16px;
+		line-height: 1.5;
+		font-weight: 600;
+		color: #333333;
+	}
+
+	i {
+		font-size: 34px;
+		color: #ababab;
+	}
+}
+
+// Letter spacing
+.ls-4-p {
+	letter-spacing: 4px;
+}
+
+.ls-15-p {
+	letter-spacing: 15px;
+}
+
+.ls-30 {
+	letter-spacing: .03em;
+}
+
+.ls-50 {
+	letter-spacing: .05em;
+}
+
+.ls-100 {
+	letter-spacing: .1em;
+}
+
+.ls-200 {
+	letter-spacing: .2em;
+}
+
+.ls-300 {
+	letter-spacing: .2em;
+}
+
+.ls-400 {
+	letter-spacing: .4em;
+}
+
+.ls-500 {
+	letter-spacing: .5em;
+}
+
+// Hover line on slider
+// http://amely.thememove.com/homepage-09/
+.tp-caption.rs-hover-ready.hover-line {
+	position: relative;
+	padding-bottom: 5px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		transition: transform .5s;
+		transform: scale3d(0, 1, 1);
+		transform-origin: 100% 50%;
+		transition-timing-function: cubic-bezier(.8, 0, .2, 1);
+	}
+
+	&:hover:after {
+		transform: scale3d(1, 1, 1);
+		transform-origin: 0% 50%;
+	}
+}
+
+// http://amely.thememove.com/homepage-02/
+// http://amely.thememove.com/homepage-05/
+.amely-banner3.font-size-64 {
+
+	@media (min-width: 1440px) {
+
+		.banner-content h2 {
+			font-size: 64px;
+		}
+	}
+}
+
+.amely-banner3.font-size-100 {
+
+	@media (min-width: 1440px) {
+
+		.banner-content h2 {
+			font-size: 100px;
+		}
+	}
+}
+
+.amely-banner3.font-size-150 {
+
+	@media (min-width: 1440px) {
+
+		.banner-content h2 {
+			font-size: 150px;
+		}
+	}
+}
+
+.amely-banner3.content-padding-70 {
+
+	@media (min-width: 1440px) {
+
+		.banner-content {
+			padding: 70px;
+		}
+	}
+}
+
+.amely-banner3.content-padding-100 {
+
+	@media (min-width: 1440px) {
+
+		.banner-content {
+			padding: 100px;
+		}
+	}
+}
+
+// http://amely.thememove.com/coming-soon/
+.vc_row.coming-soon-row {
+
+	h4:before {
+		margin-right: 15px;
+
+		@include fa-icon('\f041');
+	}
+
+	h2 {
+		font-weight: 700 !important;
+		margin-bottom: 80px;
+
+		@include media-breakpoint-down(lg) {
+			font-size: 60px !important;
+			margin-bottom: 60px !important;
+		}
+
+		@include media-breakpoint-down(md) {
+			font-size: 40px !important;
+			margin-bottom: 25px !important;
+		}
+	}
+
+	.amely-mailchimp {
+		max-width: 570px;
+	}
+}
+
+// http://amely.thememove.com/homepage-02/
+// http://amely.thememove.com/homepage-12/
+.vc_row.newsletter-icon-rotate {
+
+	.amely-icon-box {
+		position: relative;
+		padding: 50px 0;
+	}
+
+	.amely-icon-box .tm-icon-box__content .title {
+		font-weight: 600;
+		letter-spacing: 0;
+	}
+
+	.tm-icon-box__icon {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: rotate(-30deg) translateX(-50%);
+	}
+}
+
+// http://amely.thememove.com/homepage-03/
+.wpb_text_column.rotate-vertical {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: -140px;
+	transform: rotate(-90deg) translateY(-50%);
+
+	br {
+		display: none;
+	}
+
+	a {
+		padding-right: 50px;
+
+		&:last-child {
+			padding: 0;
+		}
+	}
+}
+
+// http://amely.thememove.com/homepage-05/
+.amely-banner3.big-text {
+
+	@include media-breakpoint-down(sm) {
+
+		.banner-text p {
+			font-size: 24px !important;
+		}
+	}
+}
+
+// About Us 2: http://amely.thememove.com/about-us-2/
+// Our Team: http://amely.thememove.com/element/our-team/
+.vc_row.our-team-small {
+	@include media-breakpoint-up(md) {
+		padding: 0 200px;
+	}
+}
+
+// Our Services: http://amely.thememove.com/our-services/
+.vc_row.contact-form-white {
+
+	.wpcf7 {
+		.wpcf7-text, textarea {
+			background-color: #ffffff;
+		}
+	}
+}
+
+//http://amely.thememove.com/homepage-13/
+.vc_row.lookbook-video {
+	text-align: right;
+
+	@include media-breakpoint-down(sm) {
+		h1 {
+			font-size: 50px !important;
+			line-height: 50px !important;
+		}
+	}
+}
+
+.vc_row.product-tabs {
+	position: relative;
+
+	.tm-shortcode.amely-button {
+		position: absolute;
+		right: 15px;
+
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+}
+
+.vc_row.footer-vc {
+	ul.menu {
+		list-style: none;
+		padding: 0;
+
+		> li {
+			font-size: 14px;
+			line-height: 35px;
+		}
+
+		> li > a {
+			&:hover {
+				color: #333333;
+			}
+		}
+
+		i {
+			padding-right: 30px;
+			max-width: 35px;
+			width: 100%;
+		}
+	}
+}
+
+.vc_row.footer-vc-new {
+	text-align: center;
+
+	.social-vc li {
+		display: inline-block;
+		padding: 0 10px;
+	}
+
+	.social-vc a {
+		font-size: 14px;
+		line-height: 32px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
+.vc_row.footer-new-2 {
+	.social-vc li {
+		display: inline-block;
+		padding: 0 10px;
+	}
+
+	.social-vc a {
+		font-size: 14px;
+		line-height: 32px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.social-links {
+		text-align: right;
+
+		li:last-child{
+			margin-right: 0 !important;
+		}
+	}
+
+	.social-vc menu li:first-child{
+		padding-left: 0 !important;
+	}
+}
+
+.vc_row.footer-vc-copyright {
+	@include media-breakpoint-down(sm) {
+		.wpb_single_image {
+			text-align: left !important;
+		}
+	}
+}
+
+//http://amely.thememove.com/homepage-14/
+.vc_row.row-overflow-visible {
+	overflow: visible !important;
+
+	&.row-slider .text-slider {
+		position: absolute;
+		top: 50%;
+		left: 10%;
+
+		@include media-breakpoint-down(lg) {
+			top: 30%;
+
+			.wpb_single_image {
+				margin-bottom: 10px !important;
+			}
+		}
+
+		@include media-breakpoint-down(sm) {
+			left: 0;
+			p {
+				font-size: 14px !important;
+				line-height: 14px !important;
+			}
+		}
+	}
+}
+
+//http://amely.thememove.com/homepage-15/
+.amely-banner3.banner-collection {
+
+	.banner-content .banner-text {
+		h3 {
+			font-size: 40px;
+
+			@include media-breakpoint-up(sm) {
+				font-size: 50px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				font-size: 72px;
+			}
+		}
+	}
+}
+
+//=======================================
+// For demo
+.megamenu-home {
+
+	@include media-breakpoint-up(xl) {
+
+		.wpb_column:nth-child(7) .wpb_single_image,
+		.wpb_column:nth-child(8) .wpb_single_image,
+		.wpb_column:nth-child(9) .wpb_single_image {
+			margin-bottom: 10px;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		.mega-menu-content {
+			padding: 30px 0 15px 40px !important;
+		}
+	}
+
+	h6 {
+		letter-spacing: .01em;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.wpb_single_image {
+		overflow: hidden;
+		margin-right: 30px;
+		max-height: 140px;
+		box-shadow: 0 15px 40px 0 rgba(51, 51, 51, 0.2);
+
+		@extend %transit;
+	}
+
+	.wpb_single_image {
+		max-width: 222px;
+	}
+
+	.wpb_column:hover {
+		.wpb_single_image {
+			box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+
+//Landing page
+a.lp-button {
+	padding: 0;
+	border: none;
+	background-color: transparent !important;
+	color: #333333 !important;
+
+	&:before {
+		display: inline-block;
+		content: '';
+		width: 30px;
+		height: 1px;
+		background-color: #333333;
+		vertical-align: middle;
+		margin-right: 10px;
+
+	}
+}
+
+.vc_row.lp-homepage {
+	img {
+		box-shadow: 0 0 40px 0 rgba(51, 51, 51, 0.2);
+		border-radius: 10px;
+
+		@extend %transit;
+
+		&:hover {
+			box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	.vc_single_image-wrapper.vc_box_border_grey {
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-radius: 10px;
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.5s;
+			z-index: 1;
+		}
+
+		&:before {
+			display: inline-block;
+			content: 'View Demo';
+			width: 160px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 14px;
+			font-weight: 600;
+			color: #23232d;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background-color: #ffffff;
+			opacity: 0;
+			visibility: hidden;
+			transform: translate(-50%, -30%);
+			z-index: 2;
+
+			@extend %transit;
+		}
+
+		@extend %transit;
+		&:hover {
+			&:after,
+			&:before {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			&:before {
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+//http://amely.thememove.com/homepage-18/
+.show-case {
+	.vc_single_image-wrapper {
+		overflow: hidden;
+	}
+}
+
+#button-video,
+.show-case {
+	.wpb_single_image {
+		margin-bottom: 30px;
+	}
+
+	img {
+		@extend %transit;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+//Homepage 19
+.cutom-banner-position {
+	.banner-content {
+		text-align: left;
+		top: 70px !important;
+		left: 40px !important;
+
+		@include media-breakpoint-up(lg) {
+			top: 100px !important;
+		}
+	}
+}
+
+.custom-banner .banner-desc {
+	font-size: 56px !important;
+	line-height: 48px !important;
+}
+
+.cutom-banner-position .custom-banner {
+	.banner-content {
+		top: 100px !important;
+		left: 70px !important;
+
+		@include media-breakpoint-up(lg) {
+			top: 150px !important;
+		}
+	}
+}
+
+ul.menu-tags {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 28px;
+		padding: 0 5px;
+
+		&:hover {
+			a {
+				color: $color__primary;
+			}
+		}
+
+		a {
+			color: #333333;
+		}
+	}
+}
+
+.custom-mailchimp .mailchimp-email {
+	border-bottom-color: #333333 !important;
+}

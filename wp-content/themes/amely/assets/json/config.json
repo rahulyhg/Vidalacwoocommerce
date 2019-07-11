@@ -1,0 +1,13 @@
+{
+	"api": "https://api.insightstud.io/update/amely",
+	"docs": "http://document.thememove.com/amely/",
+	"icon": "/assets/images/thumbnail.jpg",
+	"import_package_full": "https://api.insightstud.io/update/amely/import/amely-full.zip",
+	"import_package_dummy": "https://api.insightstud.io/update/amely/import/amely-dummy.zip",
+	"screenshot": "/screenshot.jpg",
+	"tf": "https://themeforest.net/item/amely-ecommerce-wordpress-theme-for-woocommerce/20858805",
+	"support": "https://thememove.ticksy.com",
+	"dummy_packages": {
+		"images": "https://api.insightstud.io/update/amely/import/amely-dummy.zip"
+	}
+}

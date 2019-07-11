@@ -1,0 +1,21 @@
+.vc_custom_heading {
+
+	&.style-amely {
+		font-weight: 500;
+		letter-spacing: 0;
+
+		> span {
+			display: inline-block;
+		}
+	}
+
+	&.align-center > span:after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.align-right > span:after {
+		margin-left: auto;
+		margin-right: 0;
+	}
+}

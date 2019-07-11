@@ -1,0 +1,693 @@
+# Copyright (C) 2018 Insight Core
+# This file is distributed under the same license as the Insight Core package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Insight Core\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/insight-core/includes/breadcrumb.php:9
+msgid "Home"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:10
+msgid "Search Result of \"%s\""
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:11
+msgid "404 Not Found"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:12
+msgctxt "category label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:13
+msgctxt "tag label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:14
+msgctxt "taxonomy label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:15
+msgctxt "author label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:16
+msgctxt "attachment label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:17
+msgctxt "year label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:18
+msgctxt "month label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:19
+msgctxt "day label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:20
+msgctxt "post type label"
+msgid "%s"
+msgstr ""
+
+#: src/insight-core/includes/breadcrumb.php:21
+msgid " &gt; "
+msgstr ""
+
+#: src/insight-core/includes/pages-header.php:7
+msgid "Welcome to %s"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:20
+msgid "The URL of your site's homepage."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:21
+msgid "Home URL"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:25
+msgid "The root URL of your site."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:26
+msgid "Site URL"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:30
+msgid "The version of WordPress installed on your site."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:31
+msgid "WP Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:35
+msgid "Whether or not you have WordPress Multisite enabled."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:36
+msgid "WP Multisite"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:44
+msgid "The maximum amount of memory (RAM) that your site can use at one time."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:45
+msgid "WP Memory Limit"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:55
+msgid "%s - We recommend setting memory to at least 128MB. See: <a href=\"%s\" target=\"_blank\">Increasing memory allocated to PHP</a>"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:62
+msgid "Displays whether or not WordPress is in Debug Mode."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:63
+msgid "WP Debug Mode"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:71
+msgid "The current language used by WordPress. Default = English"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:72
+msgid "Language"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:76
+msgid "The current theme name"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:77
+msgid "Theme Name"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:81
+msgid "The current theme version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:82
+msgid "Theme Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:86
+msgid "Installed plugins"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:87
+msgid "Activated Plugins"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:111
+msgid "Information about the web server that is currently hosting your site."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:112
+msgid "Server Info"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:116
+msgid "The version of PHP installed on your hosting server."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:117
+msgid "PHP Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:131
+msgid "The largest filesize that can be contained in one post."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:132
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:136
+msgid "The amount of time (in seconds) that your site will spend on a single operation before timing out (to avoid server lockups)"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:137
+msgid "PHP Time Limit"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:142
+msgid "%s - We recommend setting max execution time to at least 180. See: <a href=\"%s\" target=\"_blank\">Increasing max execution to PHP</a>"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:149
+msgid "The maximum number of variables your server can use for a single function to avoid overloads."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:150
+msgid "PHP Max Input Vars"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:155
+msgid "%s - Max input vars limitation will truncate POST data such as menus."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:163
+msgid "The version of MySQL installed on your hosting server."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:164
+msgid "MySQL Version"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:173
+msgid "The largest filesize that can be uploaded to your WordPress installation."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:174
+msgid "Max Upload Size"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:178
+msgid "The default timezone for your server."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:179
+msgid "Default Timezone is UTC"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:183
+msgid "Default timezone is %s - it should be UTC"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:193
+msgid "Plugins may use it when communicating with remote services."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:198
+msgid "Your server does not have fsockopen or cURL enabled. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:202
+msgid "WordPress Importer use DOMDocument."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:207
+msgid "Your server does not have <a href=\"%s\">the DOM extension</a> class enabled. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:211
+msgid "WordPress Importer use XMLReader."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:216
+msgid "Your server does not have <a href=\"%s\">the XMLReader extension</a> class enabled. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:219
+msgid "Remote Get"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:220
+msgid "Retrieve the raw response from the HTTP request using the GET method."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:225
+msgid " WordPress function <a href=\"https://codex.wordpress.org/Function_Reference/wp_remote_get\">wp_remote_get()</a> test failed. Please contact your hosting provider to enable it."
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:227
+msgid "Error: %s"
+msgstr ""
+
+#: src/insight-core/includes/pages-system.php:229
+msgid "Status code: %s"
+msgstr ""
+
+#: src/insight-core/includes/pages-update.php:9
+msgid "Sorry, you are not allowed to update this site."
+msgstr ""
+
+#: src/insight-core/includes/pages-update.php:28
+msgid "There is a new version of %1$s available. <a href=\"%2$s\" %3$s>View version %4$s details</a> or <a href=\"%5$s\" %6$s>update now</a>."
+msgstr ""
+
+#: src/insight-core/includes/pages-update.php:43
+msgid "There is a new version of %1$s available. <strong>Please enter your purchase code to update the theme.</strong>"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:220, src/insight-core/includes/import/import-page.php:111
+msgid "Our demo data import lets you have the whole data package in minutes, delivering all kinds of essential things quickly and simply. You may not have enough time for a coffee as the import is too fast!"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:224, src/insight-core/includes/import/import-page.php:115
+msgid "Notice: Before import, Make sure your website data is empty (posts, pages, menus...etc...)"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:226, src/insight-core/includes/import/import-page.php:117
+msgid "We suggest you use the plugin"
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:229, src/insight-core/includes/import/import-page.php:120
+msgid "to reset your website before import."
+msgstr ""
+
+#: src/insight-core/includes/pages-welcome.php:234, src/insight-core/includes/import/import-page.php:148, src/insight-core/includes/import/import-page.php:163
+msgid "%s time"
+msgid_plural "%s times"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/insight-core/includes/customizer/import.php:55, src/insight-core/includes/import/import.php:135
+msgid "Import is successful!"
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:20, src/insight-core/includes/customizer/io-control.php:26, src/insight-core/includes/export/export-page.php:22, src/insight-core/includes/export/export-page.php:35, src/insight-core/includes/export/export-page.php:48, src/insight-core/includes/export/export-page.php:61, src/insight-core/includes/export/export-page.php:74, src/insight-core/includes/export/export-page.php:86, src/insight-core/includes/export/export-page.php:99, src/insight-core/includes/export/export-page.php:114, src/insight-core/includes/export/export-page.php:124, src/insight-core/includes/export/export-page.php:134, src/insight-core/includes/export/export-page.php:146
+msgid "Export"
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:23
+msgid "Click the button below to export the customization settings for this theme."
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:29, src/insight-core/includes/customizer/io-control.php:34
+msgid "Import"
+msgstr ""
+
+#: src/insight-core/includes/customizer/io-control.php:32
+msgid "Upload a file to import customization settings for this theme."
+msgstr ""
+
+#: src/insight-core/includes/customizer/io.php:17
+msgid "Import / Export"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:12
+msgid "The importer is working"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:16
+msgid "Preparing to connect to server"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:27
+msgid "Please do not navigate away while importing. It may take up to 10 minutes to download resources."
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:69
+msgid "The importer is running. Please don't navigate away from this page."
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:81, src/insight-core/includes/import/import-page.php:87
+msgid "Import has completed"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:94
+msgid "Import is successful! Now customization is as easy as pie. Enjoy it!"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:181
+msgid "You can import pages optionally. This way is suitable if you want to get new homepages after updating."
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:190
+msgid "Choose page to import"
+msgstr ""
+
+#: src/insight-core/includes/import/import-page.php:261
+msgid "Total time: %s"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:63, src/insight-core/includes/import/import.php:138
+msgid "Wrong dummy name"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:72, src/insight-core/includes/import/v1/class-importer.php:103, src/insight-core/includes/import/v2/class-importer.php:154
+msgid "Could not write files into directory: <strong>%swp-content</strong>"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:158
+msgid "Can't find InsightCore_Importer class"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:167
+msgid "File does not exist: <strong>%s/content.xml</strong>"
+msgstr ""
+
+#: src/insight-core/includes/import/import.php:175
+msgid "Error while importing"
+msgstr ""
+
+#: src/insight-core/includes/import/run.importer.php:32
+msgid "Initializing Data"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:107, src/insight-core/includes/import/v2/class-importer.php:158
+msgid "Writable Passed: <strong>%s</strong>wp-content"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:112, src/insight-core/includes/import/v2/class-importer.php:163
+msgid "Tips: Try to change Chmode of folder to 755 or 777"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:112, src/insight-core/includes/import/v2/class-importer.php:163
+msgid "Click to Retry"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:148, src/insight-core/includes/import/v2/class-importer.php:199
+msgid "Downloading package..."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:175, src/insight-core/includes/import/v2/class-importer.php:226
+msgid "<strong>ERROR %s:</strong> Could not extract demo media package. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:222, src/insight-core/includes/import/v2/class-importer.php:271
+msgid "<strong>ERROR %s:</strong> Could not download demo media package. Please use <a href=\"%s\" target=\"_blank\">this direct link</a> or contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:280, src/insight-core/includes/import/v2/class-importer.php:331
+msgid "<strong>ERROR %s:</strong> Could not found temporary folder. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:460, src/insight-core/includes/import/v2/class-importer.php:511
+msgid "Adding <b>Sidebars</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:487, src/insight-core/includes/import/v2/class-importer.php:538
+msgid "<strong>ERROR %s:</strong> Could not read the widget sample data file. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:649, src/insight-core/includes/import/v2/class-importer.php:700
+msgid "Adding <b>Customizer Options</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:825, src/insight-core/includes/import/v2/class-importer.php:894
+msgid "Adding <b>Attribute Swatches</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1038, src/insight-core/includes/import/v2/class-importer.php:1107
+msgid "<strong>ERROR %s:</strong> Could not download demo media package. Please contact our support staff."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1124, src/insight-core/includes/import/v2/class-importer.php:1187
+msgid "Preparing for add media..."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1179, src/insight-core/includes/import/v2/class-importer.php:1466
+msgid "Get author mapping"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1222, src/insight-core/includes/import/v2/class-importer.php:1578
+msgid "Updating incorrect/missing infomation in the database..."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1242, src/insight-core/includes/import/v1/class-importer.php:1251, src/insight-core/includes/import/v1/class-importer.php:1299, src/insight-core/includes/import/v1/class-importer.php:1304, src/insight-core/includes/import/v1/class-importer.php:1314
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1243, src/insight-core/includes/import/v2/class-importer.php:1616
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1305
+msgid "The export file could not be found at <code>%s</code>. It is likely that this was caused by a permissions problem."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1323
+msgid "This WXR file (version %s) may not be supported by this version of the importer. Please consider updating."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1374
+msgid "Assign Authors"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1375
+msgid "To make it easier for you to edit and save the imported content, you may want to reassign the author of the imported item to an existing user of this site. For example, you may want to import all the entries as <code>admin</code>s entries."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1377
+msgid "If a new user is created by WordPress, a new password will be randomly generated and the new user&#8217;s role will be set as %s. Manually changing the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1387
+msgid "Import Attachments"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1391
+msgid "Download and import file attachments"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1396
+msgid "Submit"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1409
+msgid "Import author:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1423
+msgid "or create new user with login name:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1426
+msgid "as a new user:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1434
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1436
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1441
+msgid "- Select -"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1496
+msgid "Failed to create new user for %s. Their posts will be attributed to the current user."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1772, src/insight-core/includes/import/v2/class-importer.php:1993
+msgid "Adding Page <b>%s</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:1780, src/insight-core/includes/import/v2/class-importer.php:2010
+msgid "Adding Custom Post Type <b>%s</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2038
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2046
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2130, src/insight-core/includes/import/v2/class-importer.php:2205
+msgid "Adding Media %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2136
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2172, src/insight-core/includes/import/v2/class-importer.php:2257
+msgid "Invalid file type"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2246, src/insight-core/includes/import/v2/class-importer.php:3111
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2255, src/insight-core/includes/import/v2/class-importer.php:3125
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2261, src/insight-core/includes/import/v2/class-importer.php:3131
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2268, src/insight-core/includes/import/v2/class-importer.php:3137
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2394
+msgid "Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import the posts, pages, comments, custom fields, categories, and tags into this site."
+msgstr ""
+
+#: src/insight-core/includes/import/v1/class-importer.php:2395
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1253
+msgid "Could not open the file for parsing"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1292, src/insight-core/includes/import/v2/class-importer.php:1422
+msgid "This WXR file (version %s) is newer than the importer (version %s) and may not be supported. Please consider updating."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1696
+msgid "Invalid author mapping"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1886
+msgid "Failed to import \"%s\": Invalid post type %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:1900
+msgid "%s \"%s\" already exists."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2002
+msgid "Adding Post <b>%s</b>"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2022
+msgid "Failed to import \"%s\" (%s)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2057, src/insight-core/includes/import/v2/class-importer.php:3001
+msgid "Imported \"%s\" (%s)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2062
+msgid "Post %d remapped to %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2754
+msgid "Failed to import user \"%s\""
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2778
+msgid "Imported user \"%s\""
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2782
+msgid "User %d remapped to %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:2941
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3006
+msgid "Term %d remapped to %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3165
+msgid "Running post-processing for post %d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3180
+msgid "Could not find the post parent for \"%s\" (post #%d)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3185
+msgid "Post %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3202
+msgid "Could not find the author for \"%s\" (post #%d)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3207
+msgid "Post %d was imported with author \"%s\", but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3235
+msgid "Post %d was marked for post-processing, but none was required."
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3248
+msgid "Could not update \"%s\" (post #%d) with mapped data"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3295
+msgid "Could not find the menu object for \"%s\" (post #%d)"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3300
+msgid "Post %d was imported with object \"%d\" of type \"%s\", but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3433
+msgid "Could not find the comment parent for comment #%d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3437
+msgid "Comment %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3453
+msgid "Could not find the author for comment #%d"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3457
+msgid "Comment %d was imported with author %d, but could not be found"
+msgstr ""
+
+#: src/insight-core/includes/import/v2/class-importer.php:3476
+msgid "Could not update comment #%d with mapped data"
+msgstr ""

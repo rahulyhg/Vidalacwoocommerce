@@ -1,0 +1,191 @@
+.amely-product-categories {
+
+	&.categories-layout-carousel {
+		opacity: 0;
+
+		@extend %transit;
+
+		@include media-breakpoint-down(xs) {
+
+			.slick-arrow.slick-next {
+				right: 10px;
+			}
+
+			.slick-arrow.slick-prev {
+				left: 10px;
+			}
+
+			.slick-slide {
+				opacity: .5;
+			}
+
+			.slick-active {
+				opacity: 1;
+			}
+		}
+
+	}
+
+	&.categories-space-25 {
+
+		.category-grid-item {
+			margin-bottom: 25px;
+			padding: 0 12.5px;
+		}
+	}
+
+	&.categories-space-20 {
+
+		.category-grid-item {
+			margin-bottom: 20px;
+			padding: 0 10px;
+		}
+	}
+
+	&.categories-space-15 {
+
+		.category-grid-item {
+			margin-bottom: 15px;
+			padding: 0 7.5px;
+		}
+	}
+
+	&.categories-space-10 {
+
+		.category-grid-item {
+			margin-bottom: 10px;
+			padding: 0 5px;
+		}
+	}
+
+	&.categories-space-5 {
+
+		.category-grid-item {
+			margin-bottom: 5px;
+			padding: 0 2.5px;
+		}
+	}
+
+	&.categories-space-0 {
+
+		.category-grid-item {
+			margin-bottom: 0;
+			padding: 0;
+		}
+	}
+
+	// Black overlay on hover style
+	&.categories-item-black-overlay .category-grid-item {
+		position: relative;
+
+		&:hover {
+
+			.product-category-thumbnail:after {
+				opacity: 1;
+			}
+
+			.product-category-content {
+				opacity: 1;
+			}
+
+			h2:after {
+				width: 100%;
+			}
+		}
+
+		.product-category-thumbnail:after {
+			content: '';
+			opacity: 0;
+			background-color: rgba(0, 0, 0, .6);
+			z-index: 1;
+
+			@include absolute-center;
+			@extend %transit;
+		}
+
+		.product-category-content {
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			z-index: 1;
+			border-bottom: none;
+			transform: translateY(-50%);
+
+			@extend %transit;
+		}
+
+		h2 {
+			display: inline-block;
+			position: relative;
+			color: #ffffff;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 0;
+				height: 2px;
+				margin: 0 auto;
+				background-color: #ffffff;
+
+				@extend %transit;
+				transition-delay: .2s;
+			}
+		}
+
+		mark.count {
+			color: #ffffff;
+		}
+
+		.category-link:after {
+			display: none;
+		}
+
+		.category-link a {
+			font-size: 0;
+			z-index: 2;
+
+			@include absolute-center;
+		}
+	}
+
+	// Masonry
+	&.categories-layout-masonry .category-grid-item {
+		position: relative;
+
+		.product-category-thumbnail {
+			position: relative;
+		}
+
+		.product-category-content {
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			padding: 0;
+			border-bottom: none;
+		}
+
+		h2 {
+			text-align: left;
+			line-height: 1;
+			padding: 0;
+		}
+
+		mark.count {
+			display: block;
+			color: #666666;
+			margin-top: 5px;
+		}
+
+		.category-link:after {
+			display: none;
+		}
+
+		.category-link a {
+			font-size: 0;
+			z-index: 2;
+
+			@include absolute-center;
+		}
+	}
+}

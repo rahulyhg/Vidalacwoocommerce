@@ -1,0 +1,54 @@
+.amely-banner-grid-6 {
+	opacity: 0;
+	overflow: hidden;
+	position: relative;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	@extend %transit;
+
+	&.banner-loaded {
+		opacity: 1;
+	}
+
+	.banners {
+		float: left;
+		margin: 0 15px;
+
+		@include media-breakpoint-up(md) {
+			margin: 0;
+
+			&.banners-column-2,
+			&.banners-column-3 {
+				width: 50%;
+			}
+
+			.tm-shortcode {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+
+			&.banners-column-1 {
+				width: 50%;
+			}
+
+			&.banners-column-2,
+			&.banners-column-3 {
+				width: 25%;
+			}
+		}
+	}
+
+	.banners-column-1 .tm-shortcode:nth-child(2),
+	.banners-column-1 .tm-shortcode:nth-child(3) {
+		float: left;
+		width: calc(50% - 30px);
+
+		@include media-breakpoint-down(xs) {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,131 @@
+/*-----------------------
+ Instagram shortcode
+-----------------------*/
+.tm-instagram {
+	text-align: center;
+
+	&-pics {
+		padding: 0;
+
+		.item {
+			position: relative;
+			display: inline-block;
+
+			&:hover {
+
+				.overlay, .item-info {
+					opacity: 1;
+					visibility: visible;
+				}
+
+				.play-button {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+
+			.play-button {
+				position: absolute;
+				text-align: center;
+				top: 50%;
+				left: 50%;
+				z-index: 1;
+				height: 40px;
+				width: 40px;
+				line-height: 40px;
+				font-size: 0;
+				transform: translate(-50%, -50%);
+
+				@extend %transit;
+
+				&:before {
+					display: inline-block;
+					font-size: 40px;
+					color: #ffffff;
+					border-radius: 100%;
+					@include ion-icons('\f215');
+				}
+			}
+
+			.overlay {
+				content: '';
+				background: rgba(0, 0, 0, .5);
+				opacity: 0;
+				visibility: hidden;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%);
+
+				@extend %transit;
+
+				a {
+					font-size: 0;
+
+					@include absolute-center;
+				}
+			}
+		}
+
+		.item-info {
+			cursor: pointer;
+			display: block;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			font-size: 0;
+			opacity: 0;
+			visibility: hidden;
+			z-index: 1;
+			transform: translateY(-50%);
+			margin: 0;
+
+			@extend %transit;
+			@include backface-visibility(hidden);
+
+			> div {
+				font-size: 14px;
+				display: inline-block;
+				vertical-align: top;
+				color: #ffffff;
+				padding: 0 10px !important;
+				border: none !important;
+
+				a {
+					display: inline-block !important;
+					color: #ffffff !important;
+					padding: 0 !important;
+				}
+
+				&:before {
+					font-size: 16px;
+					margin-right: 5px;
+					display: inline-block;
+					vertical-align: middle;
+
+					@extend %ion-icons;
+				}
+
+				&.likes:before {
+					content: '\f387';
+				}
+
+				&.comments:before {
+					content: '\f11d';
+				}
+			}
+		}
+	}
+
+	&-follow-links {
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.2;
+		letter-spacing: .01em;
+		text-transform: uppercase;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+}

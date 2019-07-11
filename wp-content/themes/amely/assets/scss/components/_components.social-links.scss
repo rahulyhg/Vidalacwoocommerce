@@ -1,0 +1,197 @@
+.social-links {
+	font-size: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+		vertical-align: top;
+
+		a {
+			position: relative;
+			display: inline-block;
+			font-size: 0;
+		}
+
+		i {
+			vertical-align: middle;
+			text-align: center;
+			font-size: 13px;
+			@extend %fa-icon;
+		}
+
+		span.title {
+			text-align: left;
+			display: inline-block;
+			margin-right: 10px;
+			padding-right: 15px;
+			font-size: 13px;
+		}
+	}
+
+	.title {
+		font-weight: 400;
+	}
+
+	.topbar & {
+
+		li {
+			border: 0 solid #eeeeee;
+			border-right-width: 1px;
+			line-height: 0;
+
+			&:before,
+			&:after {
+				display: none;
+			}
+
+			&:first-child {
+				border-left-width: 1px;
+			}
+
+			&:last-child.has-title {
+				.title {
+					padding-right: 5px;
+				}
+			}
+
+			i {
+				margin-right: 0;
+				width: 45px;
+				height: 45px;
+				font-size: 15px;
+				line-height: 45px;
+			}
+
+			span.title {
+				line-height: 45px;
+			}
+		}
+	}
+
+	.topbar.topbar-divider--dotted & {
+
+		li {
+			border: none;
+			position: relative;
+
+			&:after {
+				opacity: .5;
+				content: '';
+				height: 3px;
+				width: 3px;
+				border-radius: 100%;
+				display: inline-block;
+				vertical-align: middle;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+
+	.topbar.topbar-switchers-right & {
+
+		li:last-child:after {
+			display: block;
+		}
+	}
+
+	.site-mobile-menu & {
+		padding: 0 20px;
+		margin-top: 30px;
+
+		li {
+			margin-right: 30px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			i {
+				line-height: 30px;
+				font-size: 18px;
+			}
+
+			span.title {
+				line-height: 30px;
+				margin-left: 5px;
+				margin-right: 0;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.site-header.header-vertical & {
+		position: fixed;
+		bottom: 50px;
+
+		li {
+			margin-right: 30px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			i {
+				line-height: 30px;
+				font-size: 18px;
+			}
+
+			a {
+				color: #333333;
+			}
+
+			&:before,
+			&:after,
+			span.title {
+				display: none;
+			}
+		}
+	}
+
+	.site-header .content-social & {
+
+		li {
+			margin-right: 30px;
+
+			i {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.offcanvas-sidebar & {
+
+		span.title {
+			vertical-align: middle;
+			margin-right: 0;
+			margin-left: 10px;
+			padding-right: 0;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		.topbar & {
+			display: none;
+		}
+	}
+}
+
+.social-links--large {
+
+	li i {
+		font-size: 18px;
+	}
+
+	li + li {
+		margin-left: 18px;
+	}
+
+}

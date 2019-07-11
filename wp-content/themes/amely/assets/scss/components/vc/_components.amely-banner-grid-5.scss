@@ -1,0 +1,37 @@
+.amely-banner-grid-5 {
+	opacity: 0;
+	overflow: hidden;
+	position: relative;
+	margin-left: -5px;
+	margin-right: -5px;
+
+	@extend %transit;
+
+	&.banner-loaded {
+		opacity: 1;
+	}
+
+	.tm-shortcode {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.banners {
+		float: left;
+		width: 50%;
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+	}
+
+	.banners-column-1 .tm-shortcode:nth-child(2),
+	.banners-column-1 .tm-shortcode:nth-child(3) {
+		float: left;
+		width: calc(50% - 10px);
+
+		@include media-breakpoint-down(xs) {
+			width: 100%;
+		}
+	}
+}

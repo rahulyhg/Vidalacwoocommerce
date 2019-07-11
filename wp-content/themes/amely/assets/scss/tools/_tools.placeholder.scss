@@ -1,0 +1,144 @@
+%clearfix {
+
+	@include clearfix;
+	&-sm {
+
+		@include media-breakpoint-up(sm) {
+
+			@include clearfix;
+		}
+	}
+	&-md {
+
+		@include media-breakpoint-up(md) {
+
+			@include clearfix;
+		}
+	}
+	&-lg {
+
+		@include media-breakpoint-up(lg) {
+
+			@include clearfix;
+		}
+	}
+}
+
+%absolute-center {
+
+	@include absolute-center;
+	&-sm {
+
+		@include media-breakpoint-up(sm) {
+
+			@include absolute-center;
+		}
+	}
+	&-md {
+
+		@include media-breakpoint-up(md) {
+
+			@include absolute-center;
+		}
+	}
+	&-lg {
+
+		@include media-breakpoint-up(lg) {
+
+			@include absolute-center;
+		}
+	}
+}
+
+%transit {
+
+	@include transit;
+	&-sm {
+
+		@include media-breakpoint-up(sm) {
+
+			@include transit();
+		}
+	}
+	&-md {
+
+		@include media-breakpoint-up(md) {
+
+			@include transit();
+		}
+	}
+	&-lg {
+
+		@include media-breakpoint-up(lg) {
+
+			@include transit();
+		}
+	}
+}
+
+%is-translate {
+
+	@include is-translated;
+
+	&-sm {
+		@include media-breakpoint-up(sm) {
+
+			@include is-translated;
+		}
+	}
+	&-md {
+
+		@include media-breakpoint-up(md) {
+
+			@include is-translated;
+		}
+	}
+	&-lg {
+
+		@include media-breakpoint-up(lg) {
+
+			@include is-translated;
+		}
+	}
+}
+
+%fa-icon {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	line-height: 1;
+}
+
+// Pe Icon 7 stroke
+%pe-icon {
+	font-family: 'Pe-icon-7-stroke';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+// Ionicons
+%ion-icons {
+	font-family: 'Ionicons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+// Themify
+%themify-icons {
+	font-family: 'Themify-icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+

@@ -1,0 +1,20 @@
+// 5 columns layout. Each column has 20% with
+@each $breakpoint in map-keys($grid-breakpoints) {
+	.col-#{$breakpoint}-is-5 {
+		@extend %grid-column;
+	}
+
+	@include media-breakpoint-up($breakpoint) {
+
+		.col-#{$breakpoint}-is-5 {
+			@include make-col(1, 5);
+		}
+
+		@each $modifier in (pull, push, offset) {
+
+			.col-#{$breakpoint}-#{$modifier}-is-5 {
+				@include make-col-modifier($modifier, 1, 5);
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.woobt-wrap {
+	margin-top: 25px;
+
+	.woobt-text {
+		font-size: 15px;
+		line-height: 1.6;
+
+		span {
+			color: $color__primary;
+			font-weight: 600;
+		}
+	}
+
+	.woobt-products.woobt-table {
+		width: 100%;
+	}
+
+	.woocommerce-Price-amount.amount {
+		font-size: 15px;
+		line-height: 28px;
+		font-weight: 600;
+		color: #333333;
+	}
+
+	del .woocommerce-Price-amount.amount {
+		font-size: 13px;
+		text-decoration: line-through;
+	}
+
+	.woobt-thumb {
+		width: 100px;
+	}
+
+	.woobt-title {
+		font-size: 15px;
+		line-height: 1.6;
+	}
+
+	.woobt-thumb img {
+		height: 50px !important;
+	}
+
+	.woobt-title {
+		padding-left: 10px !important;
+	}
+}

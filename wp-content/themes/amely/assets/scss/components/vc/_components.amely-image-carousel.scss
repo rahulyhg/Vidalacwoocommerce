@@ -1,0 +1,43 @@
+.amely-image-carousel {
+	opacity: 0;
+	@extend %transit;
+
+	&.slick-initialized {
+		opacity: 1;
+	}
+
+	.tm-carousel-item {
+		text-align: center;
+	}
+
+	.tm-carousel-item img {
+		backface-visibility: hidden;
+
+		@extend %transit;
+	}
+
+	.slick-dots {
+		margin-top: -40px;
+		position: relative;
+	}
+
+	@include media-breakpoint-down(xs) {
+
+		.slick-arrow.slick-next {
+			right: 10px;
+		}
+
+		.slick-arrow.slick-prev {
+			left: 10px;
+		}
+
+		.slick-slide {
+			opacity: .5;
+		}
+
+		.slick-active {
+			opacity: 1;
+		}
+	}
+
+}
