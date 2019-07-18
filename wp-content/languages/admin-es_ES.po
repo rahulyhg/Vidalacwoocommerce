@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-07-10 16:03:52+0000\n"
+"PO-Revision-Date: 2019-07-12 18:34:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2273,7 +2273,7 @@ msgstr "Por defecto, WordPress no comparte ningún dato personal con nadie."
 #. translators: privacy policy tutorial.
 #: wp-admin/includes/misc.php:1892
 msgid "In this section you should name and list all third party providers with whom you share site data, including partners, cloud-based services, payment processors, and third party service providers, and note what data you share with them and why. Link to their own privacy policies if possible."
-msgstr "En esta sección debes nombrar y enumerar todos los proveedores de terceros con los que compartes datos del sitio, incluidos los socios, los servicios basados en la nube, los procesadores de pagos y los proveedores de servicios de terceros, e indicar qué datos compartes con ellos y por qué. Enlaza a sus propios avisos de privacidad si es posible."
+msgstr "En esta sección debes nombrar y enumerar todos los proveedores externos con los que compartes datos del sitio, incluidos los socios, los servicios basados en la nube, los procesadores de pagos y los proveedores de servicios externos, e indicar qué datos compartes con ellos y por qué. Enlaza a sus propios avisos de privacidad si es posible."
 
 #. translators: default privacy policy heading.
 #: wp-admin/includes/misc.php:1888
@@ -3170,7 +3170,7 @@ msgstr "Instalaciones activas:"
 
 #: wp-admin/includes/ms.php:1162
 msgid "<strong>Settings</strong> &mdash; This page shows a list of all settings associated with this site. Some are created by WordPress and others are created by plugins you activate. Note that some fields are grayed out and say Serialized Data. You cannot modify these values due to the way the setting is stored in the database."
-msgstr "<strong>Ajustes</strong> &mdash; Esta página muestra una lista de todos los ajustes asociados a este sitio. Algunos los crea WordPress, y otros los crean los plugins que activas. Observa que algunos campos están en gris e indican Serialized Data. No puedes modificar estos valores debido al modo en que está almacenado el ajuste en la base de datos."
+msgstr "<strong>Ajustes</strong> &mdash; Esta página muestra una lista de todos los ajustes asociados a este sitio. Algunos los crea WordPress, y otros los crean los plugins que activas. Observa que algunos campos están en gris e indican «Serialized Data». No puedes modificar estos valores debido al modo en que está almacenado el ajuste en la base de datos."
 
 #: wp-admin/includes/ms.php:1161
 msgid "<strong>Themes</strong> &mdash; This area shows themes that are not already enabled across the network. Enabling a theme in this menu makes it accessible to this site. It does not activate the theme, but allows it to show in the site&#8217;s Appearance menu. To enable a theme for the entire network, see the <a href=\"%s\">Network Themes</a> screen."
@@ -5729,7 +5729,7 @@ msgstr "Bienvenido"
 #. translators: %s: placeholder that must come at the start of the URL
 #: wp-admin/options-permalink.php:299
 msgid "If you like, you may enter custom structures for your category and tag URLs here. For example, using <code>topics</code> as your category base would make your category links like <code>%s/topics/uncategorized/</code>. If you leave these blank the defaults will be used."
-msgstr "Si quieres, puedes introducir aquí estructuras personalizadas para las URLs de etiqueta o categoría. Por ejemplo, usando <code>secciones</code> como categoría base hará que los enlaces de categorías sean algo como <code>%s/secciones/sin-categoria/</code>. Si dejas esto en blanco se usarán los ajustes por defecto."
+msgstr "Si quieres, puedes introducir aquí estructuras personalizadas para las URLs de etiquetas o categorías. Por ejemplo, usando <code>secciones</code> como base de las categorías hará que los enlaces de categorías sean algo como <code>%s/secciones/sin-categoria/</code>. Si dejas esto en blanco se usarán los ajustes por defecto."
 
 #: wp-admin/credits.php:149
 msgid "Release Lead"
@@ -7901,7 +7901,7 @@ msgstr "Prefijo de la tabla (si quieres ejecutar más de un WordPress en una sol
 
 #: wp-admin/includes/class-wp-debug-data.php:749 wp-admin/setup-config.php:164
 msgid "Database host"
-msgstr "Base de datos anfitrión"
+msgstr "Servidor de la base de datos"
 
 #: wp-admin/setup-config.php:163
 msgid "Database password"
@@ -9766,7 +9766,7 @@ msgstr "Puedes personalizar cómo se muestra esta pantalla de diferentes formas:
 
 #: wp-admin/edit.php:226
 msgid "You can hide/display columns based on your needs and decide how many posts to list per screen using the Screen Options tab."
-msgstr "Puedes esconder/mostrar columnas basándote en tus necesidades y decidir cuántas entradas se mostrarán por pantalla utilizando la pestaña Opciones de pantalla."
+msgstr "Puedes ocultar/mostrar columnas basándote en tus necesidades y decidir cuántas entradas se mostrarán por pantalla utilizando la pestaña «Opciones de pantalla»."
 
 #: wp-admin/edit.php:229
 msgid "You can refine the list to show only posts in a specific category or from a specific month by using the dropdown menus above the posts list. Click the Filter button after making your selection. You also can refine the list by clicking on the post author, category or tag in the posts list."
@@ -10935,12 +10935,12 @@ msgstr "Si temporalmente tienes que hacer el archivo %s editable para que podamo
 
 #: wp-admin/options-permalink.php:309
 msgid "Tag base"
-msgstr "Etiqueta base"
+msgstr "Base de las etiquetas"
 
 #. translators: prefix for category permalinks
 #: wp-admin/options-permalink.php:305
 msgid "Category base"
-msgstr "Categoría base"
+msgstr "Base de las categorías"
 
 #: wp-admin/options-permalink.php:295
 msgid "Optional"
